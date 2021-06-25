@@ -31,22 +31,27 @@ import {
   doesAddressRequireLedgerHidConnection,
   getUseTokenDetection,
   getTokenList,
+  getFailedTransactionsToDisplay,
 } from '../../selectors';
 import { getMostRecentOverviewPage } from '../../ducks/history/history';
-import {
-  isAddressLedger,
-  updateTransactionGasFees,
-  getIsGasEstimatesLoading,
-  getNativeCurrency,
-} from '../../ducks/metamask/metamask';
-
 import {
   transactionMatchesNetwork,
   txParamsAreDappSuggested,
 } from '../../../shared/modules/transaction.utils';
-import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
 
-import { getGasLoadingAnimationIsShowing } from '../../ducks/app/app';
+import {
+  addTxToFailedTxesToDisplay,
+  removeTxFromFailedTxesToDisplay,
+  getGasLoadingAnimationIsShowing,
+} from '../../ducks/app/app';
+import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
+import {
+  updateTransactionGasFees,
+  getIsGasEstimatesLoading,
+  getNativeCurrency,
+  isAddressLedger,
+} from '../../ducks/metamask/metamask';
+
 import { isLegacyTransaction } from '../../helpers/utils/transactions.util';
 import ConfirmTransactionBase from './confirm-transaction-base.component';
 
@@ -82,10 +87,13 @@ const mapStateToProps = (state, ownProps) => {
     nextNonce,
     provider: { chainId },
   } = metamask;
+
+  const failedTransactionsToDisplay = getFailedTransactionsToDisplay(state);
+
   const { tokenData, txData, tokenProps, nonce } = confirmTransaction;
   const { txParams = {}, id: transactionId, type } = txData;
   const transaction =
-    Object.values(unapprovedTxs).find(
+    Object.values({ ...unapprovedTxs, ...failedTransactionsToDisplay }).find(
       ({ id }) => id === (transactionId || Number(paramsTransactionId)),
     ) || {};
   const {
@@ -177,6 +185,9 @@ const mapStateToProps = (state, ownProps) => {
     state,
     fromAddress,
   );
+  const isFailedTransaction = Boolean(
+    failedTransactionsToDisplay[fullTxData.id],
+  );
 
   return {
     balance,
@@ -226,6 +237,7 @@ const mapStateToProps = (state, ownProps) => {
     showLedgerSteps: fromAddressIsLedger,
     nativeCurrency,
     hardwareWalletRequiresConnection,
+    isFailedTransaction,
   };
 };
 
@@ -260,6 +272,10 @@ export const mapDispatchToProps = (dispatch) => {
     updateTransactionGasFees: (gasFees) => {
       dispatch(updateTransactionGasFees({ ...gasFees, expectHexWei: true }));
     },
+    addTxToFailedTxesToDisplay: (id) =>
+      dispatch(addTxToFailedTxesToDisplay(id)),
+    removeTxFromFailedTxesToDisplay: (id) =>
+      dispatch(removeTxFromFailedTxesToDisplay(id)),
   };
 };
 
