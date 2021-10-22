@@ -159,7 +159,7 @@ class RevealSeedPage extends Component {
       <div className="page-container">
         <div className="page-container__header">
           <div className="page-container__title">
-            {this.context.t('secretRecoveryPhrase')}
+            {this.context.t('revealSeedWordsTitle')}
           </div>
           <div className="page-container__subtitle">
             {this.context.t('revealSeedWordsDescription')}

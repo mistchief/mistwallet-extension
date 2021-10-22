@@ -30,7 +30,7 @@
     "message": "tegevuste logi"
   },
   "addAcquiredTokens": {
-    "message": "Lisage load, mis olete MetaMaskiga saanud"
+    "message": "Lisage load, mis olete MistWalletiga saanud"
   },
   "addAlias": {
     "message": "Lisage alias"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -95,7 +95,7 @@
     "message": "Automaatse väljalogimise taimer (minutites)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Seadistage jõudeolek minutites, enne kui MetaMask automaatselt välja logib"
+    "message": "Seadistage jõudeolek minutites, enne kui MistWallet automaatselt välja logib"
   },
   "average": {
     "message": "Keskmine"
@@ -107,7 +107,7 @@
     "message": "Tagasi kõigile"
   },
   "backupApprovalInfo": {
-    "message": "See salakood on vajalik teie rahakoti taastamiseks, kui kaotate oma seadme, unustate parooli, peate MetaMaski uuesti alla laadima, või kui soovite avada oma rahakoti mõnel teisel seadmel."
+    "message": "See salakood on vajalik teie rahakoti taastamiseks, kui kaotate oma seadme, unustate parooli, peate MistWalleti uuesti alla laadima, või kui soovite avada oma rahakoti mõnel teisel seadmel."
   },
   "backupApprovalNotice": {
     "message": "Varundage oma salajane taastamisvõti, et oma rahakott ja vahendid turvalisena hoida."
@@ -141,7 +141,7 @@
     "message": "Ostke ETH-d Wyre'iga"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre võimaldab kasutada krediitkaarti, et teha ETH sissemakse otse MetaMaski kontole."
+    "message": "Wyre võimaldab kasutada krediitkaarti, et teha ETH sissemakse otse MistWalleti kontole."
   },
   "bytes": {
     "message": "Baidid"
@@ -159,7 +159,7 @@
     "message": "Ahela ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Riistvararahakoti ühendamiseks peate kasutama MetaMaski Google Chrome'is."
+    "message": "Riistvararahakoti ühendamiseks peate kasutama MistWalleti Google Chrome'is."
   },
   "clickToRevealSeed": {
     "message": "Klõpsake salasõnade kuvamiseks"
@@ -333,13 +333,13 @@
     "message": "Ärge jagage fraasi mitte kellegagi."
   },
   "endOfFlowMessage5": {
-    "message": "Olge ettevaatlik andmepüügi osas! MetaMask ei küsi kunagi spontaanselt teie seemnefraasi."
+    "message": "Olge ettevaatlik andmepüügi osas! MistWallet ei küsi kunagi spontaanselt teie seemnefraasi."
   },
   "endOfFlowMessage6": {
     "message": "Kui peate oma seemnefraasi uuesti varundama, leiate selle valikust Settings (Seaded) -> Security (Turvalisus)."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask ei saa teie seemnefraasi taastada. Lisateave."
+    "message": "MistWallet ei saa teie seemnefraasi taastada. Lisateave."
   },
   "endOfFlowMessage9": {
     "message": "Lisateave."
@@ -446,7 +446,7 @@
     "message": "Ühendage riistvara rahakott"
   },
   "hardwareWalletsMsg": {
-    "message": "Valige riistvara rahakott, mida soovite MetaMaskis kasutada"
+    "message": "Valige riistvara rahakott, mida soovite MistWalletis kasutada"
   },
   "here": {
     "message": "siin",
@@ -472,7 +472,7 @@
     "message": "Impordi konto"
   },
   "importAccountMsg": {
-    "message": "Imporditud kontosid ei seostata teie ainulaadse MetaMaski konto seemnefraasiga. Lugege imporditud kontode kohta lähemalt"
+    "message": "Imporditud kontosid ei seostata teie ainulaadse MistWalleti konto seemnefraasiga. Lugege imporditud kontode kohta lähemalt"
   },
   "importAccountSeedPhrase": {
     "message": "Impordi seemnefraasiga konto"
@@ -567,7 +567,7 @@
     "message": "Teid ühendatakse Ethereumi ja detsentraliseeritud võrguga."
   },
   "metamaskVersion": {
-    "message": "MetaMaski versioon"
+    "message": "MistWalleti versioon"
   },
   "mustSelectOne": {
     "message": "Peate valima vähemalt 1 loa."
@@ -576,7 +576,7 @@
     "message": "Minu kontod"
   },
   "needEtherInWallet": {
-    "message": "Selleks, et suhelda MetaMaski abil detsentraliseeritud rakendustega, peab teil rahakotis eetrit olema."
+    "message": "Selleks, et suhelda MistWalleti abil detsentraliseeritud rakendustega, peab teil rahakotis eetrit olema."
   },
   "needImportFile": {
     "message": "Peate importimiseks faili valima.",
@@ -619,8 +619,8 @@
   "newPassword": {
     "message": "Uus parool (vähemalt 8 tähemärki)"
   },
-  "newToMetaMask": {
-    "message": "Pole MetaMaski varem kasutanud?"
+  "newToMistWallet": {
+    "message": "Pole MistWalleti varem kasutanud?"
   },
   "newTotal": {
     "message": "Uus kogusumma"
@@ -680,7 +680,7 @@
     "message": "Osalege MetaMetricsis"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Osalege MetaMetricsis, et aidata meil MetaMaski paremaks teha"
+    "message": "Osalege MetaMetricsis, et aidata meil MistWalleti paremaks teha"
   },
   "password": {
     "message": "Parool"
@@ -789,6 +789,9 @@
   "revealSeedWordsDescription": {
     "message": "Kui vahetate veebilehitsejat või arvutit, vajate oma kontodele ligipääsemiseks seemnefraasi. Hoidke seda turvalises ja salajases kohas."
   },
+  "revealSeedWordsTitle": {
+    "message": "Seemnefraas"
+  },
   "revealSeedWordsWarning": {
     "message": "Neid sõnu saab kasutada kõigi teie kontode tühjendamiseks."
   },
@@ -825,6 +828,9 @@
   "searchTokens": {
     "message": "Lubade otsimine"
   },
+  "secretBackupPhrase": {
+    "message": "Salajane varundusfraas"
+  },
   "secretBackupPhraseDescription": {
     "message": "Teie salajane varundusfraas hõlbustab konto varundamist ja taastamist."
   },
@@ -850,7 +856,7 @@
     "message": "Valige konto"
   },
   "selectAnAccountHelp": {
-    "message": "Valige konto, mida MetaMaskis vaadata"
+    "message": "Valige konto, mida MistWalletis vaadata"
   },
   "selectEachPhrase": {
     "message": "Valige iga fraas, veendumaks, et see on õige."
@@ -964,16 +970,16 @@
     "message": "Veenduge, et keegi teine ei vaata selle koodi skannimisel teie ekraani"
   },
   "syncWithMobileComplete": {
-    "message": "Teie andmed on edukalt sünkroonitud. Nautige MetaMaski mobiilirakendust!"
+    "message": "Teie andmed on edukalt sünkroonitud. Nautige MistWalleti mobiilirakendust!"
   },
   "syncWithMobileDesc": {
-    "message": "Saate sünkroonida oma kontod ja teabe oma mobiiliseadmega. Avage MetaMaski mobiilirakendus, avage \"Settings\" (Seaded) ja puudutage valikut \"Sync from Browser Extension\" (Sünkroonimine lehitseja laiendusest)"
+    "message": "Saate sünkroonida oma kontod ja teabe oma mobiiliseadmega. Avage MistWalleti mobiilirakendus, avage \"Settings\" (Seaded) ja puudutage valikut \"Sync from Browser Extension\" (Sünkroonimine lehitseja laiendusest)"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Järgige MetaMaski mobiilirakenduse esmakordsel avamisel telefonis esitatud samme."
+    "message": "Järgige MistWalleti mobiilirakenduse esmakordsel avamisel telefonis esitatud samme."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Skanneerige see kood MetaMaski mobiilirakendusega"
+    "message": "Skanneerige see kood MistWalleti mobiilirakendusega"
   },
   "syncWithMobileTitle": {
     "message": "Mobiiliga sünkroonimine"
@@ -1064,7 +1070,7 @@
     "message": "Proovi uuesti"
   },
   "typePassword": {
-    "message": "Sisestage oma MetaMaski parool"
+    "message": "Sisestage oma MistWalleti parool"
   },
   "unapproved": {
     "message": "Kinnitamata"
@@ -1114,8 +1120,11 @@
   "visitWebSite": {
     "message": "Külastage meie veebilehte"
   },
+  "walletSeed": {
+    "message": "Rahakoti seeme"
+  },
   "welcome": {
-    "message": "Tere tulemast MetaMaski"
+    "message": "Tere tulemast MistWalleti"
   },
   "welcomeBack": {
     "message": "Tere tulemast tagasi!"

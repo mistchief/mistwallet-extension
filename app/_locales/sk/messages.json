@@ -30,7 +30,7 @@
     "message": "protokol aktivity"
   },
   "addAcquiredTokens": {
-    "message": "Pridajte tokeny, ktoré ste získali pomocou MetaMask"
+    "message": "Pridajte tokeny, ktoré ste získali pomocou MistWallet"
   },
   "addAlias": {
     "message": "Pridať alias"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -92,7 +92,7 @@
     "message": "Časovač automatického odhlásenia (minúty)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Nastavte čas nečinnosti v minútach skôr, než sa MetaMask automaticky odhlási"
+    "message": "Nastavte čas nečinnosti v minútach skôr, než sa MistWallet automaticky odhlási"
   },
   "average": {
     "message": "Priemerný"
@@ -104,7 +104,7 @@
     "message": "Späť na všetko"
   },
   "backupApprovalInfo": {
-    "message": "Tento tajný kód je potrebný na obnovenie peňaženky v prípade straty zariadenia, zabudnutia hesla, preinštalovania MetaMask alebo prístupu k peňaženke na inom zariadení."
+    "message": "Tento tajný kód je potrebný na obnovenie peňaženky v prípade straty zariadenia, zabudnutia hesla, preinštalovania MistWallet alebo prístupu k peňaženke na inom zariadení."
   },
   "backupApprovalNotice": {
     "message": "Zálohujte si svoj tajný kód na obnovenie, aby bola vaša peňaženka a prostriedky bezpečné."
@@ -135,7 +135,7 @@
     "message": "Kúpte ETH s Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vám umožňuje použiť kreditnú kartu na vloženie depozitu ETH priamo na váš účet MetaMask."
+    "message": "Wyre vám umožňuje použiť kreditnú kartu na vloženie depozitu ETH priamo na váš účet MistWallet."
   },
   "bytes": {
     "message": "Bajty"
@@ -153,7 +153,7 @@
     "message": "ID reťazca"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ak sa chcete pripojiť k svojej hardvérovej peňaženke, musíte v Google Chrome použiť MetaMask."
+    "message": "Ak sa chcete pripojiť k svojej hardvérovej peňaženke, musíte v Google Chrome použiť MistWallet."
   },
   "clickToRevealSeed": {
     "message": "Kliknutím sem odkryjete tajné slová"
@@ -327,13 +327,13 @@
     "message": "Nikdy nezdieľajte frázu s niekým iným."
   },
   "endOfFlowMessage5": {
-    "message": "Dávajte pozor na phishing! MetaMask nikdy nebude spontánne požadovať vašu seed frázu."
+    "message": "Dávajte pozor na phishing! MistWallet nikdy nebude spontánne požadovať vašu seed frázu."
   },
   "endOfFlowMessage6": {
     "message": "Ak potrebujete backup frázu znova zálohovať, nájdete ju v časti Nastavenia -> Zabezpečenie."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask nemôže obnoviť vašu seed frázu. Zistiť viac."
+    "message": "MistWallet nemôže obnoviť vašu seed frázu. Zistiť viac."
   },
   "endOfFlowMessage9": {
     "message": "Dozvedieť sa viac."
@@ -444,7 +444,7 @@
     "message": "Pripojiť hardvérovú peňaženku"
   },
   "hardwareWalletsMsg": {
-    "message": "Vyberte hardvérovú peňaženku, ktorú chcete používať s MetaMask"
+    "message": "Vyberte hardvérovú peňaženku, ktorú chcete používať s MistWallet"
   },
   "here": {
     "message": "zde",
@@ -463,7 +463,7 @@
     "message": "Import účtu"
   },
   "importAccountMsg": {
-    "message": "Importované účty nebudou spojeny s vaší původní MetaMaskovou klíčovou frází. Zjistěte více o importovaných účtech "
+    "message": "Importované účty nebudou spojeny s vaší původní MistWalletovou klíčovou frází. Zjistěte více o importovaných účtech "
   },
   "importAccountSeedPhrase": {
     "message": "Importovať účet so seed frázou"
@@ -546,10 +546,10 @@
     "message": "Zpráva"
   },
   "metamaskDescription": {
-    "message": "MetaMask je bezpečný osobní trezor pro Ethereum."
+    "message": "MistWallet je bezpečný osobní trezor pro Ethereum."
   },
   "metamaskVersion": {
-    "message": "Verzia MetaMask"
+    "message": "Verzia MistWallet"
   },
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."
@@ -558,7 +558,7 @@
     "message": "Moje účty"
   },
   "needEtherInWallet": {
-    "message": "Potřebujete Ether v peněžence, abyste mohli pomocí MetaMasku interagovat s decentralizovanými aplikacemi."
+    "message": "Potřebujete Ether v peněžence, abyste mohli pomocí MistWalletu interagovat s decentralizovanými aplikacemi."
   },
   "needImportFile": {
     "message": "Musíte zvolit soubor k importu.",
@@ -601,8 +601,8 @@
   "newPassword": {
     "message": "Nové heslo (min 8 znaků)"
   },
-  "newToMetaMask": {
-    "message": "Ste noví na MetaMask?"
+  "newToMistWallet": {
+    "message": "Ste noví na MistWallet?"
   },
   "newTotal": {
     "message": "Nový súčet"
@@ -659,7 +659,7 @@
     "message": "Zúčastnite sa na MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Zúčastnite sa na MetaMetrics a pomôžte nám vylepšiť MetaMask"
+    "message": "Zúčastnite sa na MetaMetrics a pomôžte nám vylepšiť MistWallet"
   },
   "password": {
     "message": "Heslo"
@@ -768,6 +768,9 @@
   "revealSeedWordsDescription": {
     "message": "Ak niekedy zmeníte prehliadač alebo presuniete počítače, budete potrebovať túto seed frázu na prístup k svojim účtom. Uložte ich niekde v bezpečí a v tajnosti."
   },
+  "revealSeedWordsTitle": {
+    "message": "Seed fráza"
+  },
   "revealSeedWordsWarning": {
     "message": "Nebnovujte slova klíčové fráze na veřejnosti! Tato slova mohou být použita k odcizení veškerých vyašich účtů."
   },
@@ -798,6 +801,9 @@
   "searchTokens": {
     "message": "Hledat tokeny"
   },
+  "secretBackupPhrase": {
+    "message": "Tajná backup fráza"
+  },
   "secretBackupPhraseDescription": {
     "message": "Vaša tajná backup fráza uľahčuje zálohovanie a obnovenie vášho účtu."
   },
@@ -823,7 +829,7 @@
     "message": "Vybrať účet"
   },
   "selectAnAccountHelp": {
-    "message": "Vyberte účet, ktorý chcete zobraziť v MetaMask"
+    "message": "Vyberte účet, ktorý chcete zobraziť v MistWallet"
   },
   "selectEachPhrase": {
     "message": "Vyberte každú frázu, aby ste sa uistili, že je správna."
@@ -934,16 +940,16 @@
     "message": "Pri skenovaní tohto kódu sa uistite, že sa nikto iný nedíva na vašu obrazovku"
   },
   "syncWithMobileComplete": {
-    "message": "Vaše údaje boli úspešne synchronizované. Užite si mobilnú aplikáciu MetaMask!"
+    "message": "Vaše údaje boli úspešne synchronizované. Užite si mobilnú aplikáciu MistWallet!"
   },
   "syncWithMobileDesc": {
-    "message": "Svoje účty a informácie môžete synchronizovať so svojim mobilným zariadením. Otvorte mobilnú aplikáciu MetaMask, prejdite na „Nastavenia“ a kliknite na „Synchronizovať z rozšírenia prehliadača“."
+    "message": "Svoje účty a informácie môžete synchronizovať so svojim mobilným zariadením. Otvorte mobilnú aplikáciu MistWallet, prejdite na „Nastavenia“ a kliknite na „Synchronizovať z rozšírenia prehliadača“."
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Ak otvoríte mobilnú aplikáciu MetaMask prvýkrát, postupujte podľa pokynov v telefóne."
+    "message": "Ak otvoríte mobilnú aplikáciu MistWallet prvýkrát, postupujte podľa pokynov v telefóne."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Naskenujte tento kód pomocou mobilnej aplikácie MetaMask"
+    "message": "Naskenujte tento kód pomocou mobilnej aplikácie MistWallet"
   },
   "syncWithMobileTitle": {
     "message": "Synchronizácia s mobilom"
@@ -1081,8 +1087,11 @@
   "visitWebSite": {
     "message": "Navštivte naši stránku"
   },
+  "walletSeed": {
+    "message": "Klíčová fráze peněženky"
+  },
   "welcome": {
-    "message": "Vitajte v MetaMask"
+    "message": "Vitajte v MistWallet"
   },
   "welcomeBack": {
     "message": "Vitajte späť!"

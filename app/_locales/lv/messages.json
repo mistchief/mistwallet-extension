@@ -30,7 +30,7 @@
     "message": "darbību žurnāls"
   },
   "addAcquiredTokens": {
-    "message": "Pievienojiet marķierus, ko ieguvāt, izmantojot MetaMask"
+    "message": "Pievienojiet marķierus, ko ieguvāt, izmantojot MistWallet"
   },
   "addAlias": {
     "message": "Pievienot segvārdu"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -95,7 +95,7 @@
     "message": "Automātiskās izrakstīšanās taimeris (minūtes)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Iestatiet bezdarbības laiku minūtēs, pēc kura MetaMask veiks automātisku izrakstīšanu"
+    "message": "Iestatiet bezdarbības laiku minūtēs, pēc kura MistWallet veiks automātisku izrakstīšanu"
   },
   "average": {
     "message": "Vidēji"
@@ -107,7 +107,7 @@
     "message": "Atgriezties pie visiem"
   },
   "backupApprovalInfo": {
-    "message": "Šis slepenais kods ir nepieciešams, lai atjaunotu jūsu maku, ja pazaudējat ierīci, aizmirstat paroli, jāpārinstalē MetaMask vai vēlaties piekļūt makam no citas ierīces."
+    "message": "Šis slepenais kods ir nepieciešams, lai atjaunotu jūsu maku, ja pazaudējat ierīci, aizmirstat paroli, jāpārinstalē MistWallet vai vēlaties piekļūt makam no citas ierīces."
   },
   "backupApprovalNotice": {
     "message": "Dublējiet savu slepeno atgūšanas kodu, lai maks un līdzekļi atrastos drošībā."
@@ -141,7 +141,7 @@
     "message": "Pirkt ETH ar Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ļauj noguldīt ETH tieši jūsu MetaMask kontā, izmantojot kredītkarti."
+    "message": "Wyre ļauj noguldīt ETH tieši jūsu MistWallet kontā, izmantojot kredītkarti."
   },
   "bytes": {
     "message": "Baiti"
@@ -159,7 +159,7 @@
     "message": "Ķēdes ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "MetaMask ir jāpalaiž pārlūkprogrammā Google Chrome, lai varētu pievienot aparatūras maku."
+    "message": "MistWallet ir jāpalaiž pārlūkprogrammā Google Chrome, lai varētu pievienot aparatūras maku."
   },
   "clickToRevealSeed": {
     "message": "Klikšķiniet šeit, lai skatītu slepenos vārdus"
@@ -333,13 +333,13 @@
     "message": "Nekad neizpaudiet šo frāzi citiem cilvēkiem."
   },
   "endOfFlowMessage5": {
-    "message": "Uzmanieties no pikšķerēšanas! MetaMask nekad pēkšņi nelūgs norādīt atkopšanas frāzi."
+    "message": "Uzmanieties no pikšķerēšanas! MistWallet nekad pēkšņi nelūgs norādīt atkopšanas frāzi."
   },
   "endOfFlowMessage6": {
     "message": "Ja nepieciešams atkārtoti dublēt atkopšanas frāzi, varat to atrast, dodoties uz Iestatījumi -> Drošība."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask nevar atjaunot jūsu atkopšanas frāzi. Uzzināt vairāk."
+    "message": "MistWallet nevar atjaunot jūsu atkopšanas frāzi. Uzzināt vairāk."
   },
   "endOfFlowMessage9": {
     "message": "Uzzināt vairāk."
@@ -446,7 +446,7 @@
     "message": "Pieslēdziet aparatūras maku"
   },
   "hardwareWalletsMsg": {
-    "message": "Atlasiet aparatūras maku lietošanai ar MetaMask"
+    "message": "Atlasiet aparatūras maku lietošanai ar MistWallet"
   },
   "here": {
     "message": "šeit",
@@ -472,7 +472,7 @@
     "message": "Importēt kontu"
   },
   "importAccountMsg": {
-    "message": "Importētie konti netiks piesaistīti sākotnēji izveidotā MetaMask konta atkopšanas frāzei. Uzziniet vairāk par importētajiem kontiem"
+    "message": "Importētie konti netiks piesaistīti sākotnēji izveidotā MistWallet konta atkopšanas frāzei. Uzziniet vairāk par importētajiem kontiem"
   },
   "importAccountSeedPhrase": {
     "message": "Importēt kontu ar atkopšanas frāzi"
@@ -573,7 +573,7 @@
     "message": "Veido savienojumu ar Ethereum un decentralizēto tīmekli."
   },
   "metamaskVersion": {
-    "message": "MetaMask versija"
+    "message": "MistWallet versija"
   },
   "mustSelectOne": {
     "message": "Jāatlasa vismaz 1 marķieris."
@@ -582,7 +582,7 @@
     "message": "Mani konti"
   },
   "needEtherInWallet": {
-    "message": "Lai izmantotu decentralizētas lietotnes ar MetaMask, jūsu makā jābūt Ether."
+    "message": "Lai izmantotu decentralizētas lietotnes ar MistWallet, jūsu makā jābūt Ether."
   },
   "needImportFile": {
     "message": "Jums jāatlasa fails, ko importēt",
@@ -625,8 +625,8 @@
   "newPassword": {
     "message": "Jauna parole (vism. 8 rakstzīmes)"
   },
-  "newToMetaMask": {
-    "message": "Nepazīstat MetaMask?"
+  "newToMistWallet": {
+    "message": "Nepazīstat MistWallet?"
   },
   "newTotal": {
     "message": "Jaunā kopsumma"
@@ -795,6 +795,9 @@
   "revealSeedWordsDescription": {
     "message": "Ja mainīsiet pārlūku vai datoru, jūsu kontu piekļuvei būs nepieciešama šī atkopšanas frāze. Saglabājiet to drošā un slepenā vietā!"
   },
+  "revealSeedWordsTitle": {
+    "message": "Atkopšanas frāze"
+  },
   "revealSeedWordsWarning": {
     "message": "Šos vārdus var izmantot visu jūsu kontu nolaupīšanai."
   },
@@ -831,6 +834,9 @@
   "searchTokens": {
     "message": "Meklēt marķierus"
   },
+  "secretBackupPhrase": {
+    "message": "Slepenā rezerves frāze"
+  },
   "secretBackupPhraseDescription": {
     "message": "Ar slepeno atgūšanas frāzi ir vieglāk dublēt un atjaunot kontu."
   },
@@ -856,7 +862,7 @@
     "message": "Atlasiet kontu"
   },
   "selectAnAccountHelp": {
-    "message": "Atlasiet kontu, ko skatīt MetaMask"
+    "message": "Atlasiet kontu, ko skatīt MistWallet"
   },
   "selectEachPhrase": {
     "message": "Lūdzu, atlasiet katru frāzi, lai pārliecinātos par tās pareizību."
@@ -970,16 +976,16 @@
     "message": "Pārliecinieties, ka neviens cits neskatās jūsu ekrānā, kad skenējat šo kodu."
   },
   "syncWithMobileComplete": {
-    "message": "Jūsu dati sekmīgi sinhronizēti. Patīkamu MetaMask mobilās lietotnes lietošanu!"
+    "message": "Jūsu dati sekmīgi sinhronizēti. Patīkamu MistWallet mobilās lietotnes lietošanu!"
   },
   "syncWithMobileDesc": {
-    "message": "Jūs varat sinhronizēt savus kontus un informāciju ar mobilo ierīci. Atveriet MetaMask mobilo lietotni, ejiet uz \"Iestatījumi\" un pieskarieties pie \"Sinhronizēt no pārlūka paplašinājuma\""
+    "message": "Jūs varat sinhronizēt savus kontus un informāciju ar mobilo ierīci. Atveriet MistWallet mobilo lietotni, ejiet uz \"Iestatījumi\" un pieskarieties pie \"Sinhronizēt no pārlūka paplašinājuma\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Ja esat pirmoreiz atvēris MetaMask mobilo lietotni, vienkārši sekojiet norādēm tālrunī."
+    "message": "Ja esat pirmoreiz atvēris MistWallet mobilo lietotni, vienkārši sekojiet norādēm tālrunī."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Noskenējiet šo kodu ar MetaMask mobilo lietotni"
+    "message": "Noskenējiet šo kodu ar MistWallet mobilo lietotni"
   },
   "syncWithMobileTitle": {
     "message": "Sinhronizēt ar tālruni"
@@ -1070,7 +1076,7 @@
     "message": "Mēģināt vēlreiz"
   },
   "typePassword": {
-    "message": "Ievadiet savu MetaMask paroli"
+    "message": "Ievadiet savu MistWallet paroli"
   },
   "unapproved": {
     "message": "Nav apstiprināts"
@@ -1120,8 +1126,11 @@
   "visitWebSite": {
     "message": "Apmeklējiet mūsu tīmekļa vietni"
   },
+  "walletSeed": {
+    "message": "Maka atkopšanas frāze"
+  },
   "welcome": {
-    "message": "Laipni lūgti MetaMask"
+    "message": "Laipni lūgti MistWallet"
   },
   "welcomeBack": {
     "message": "Ar atgriešanos!"

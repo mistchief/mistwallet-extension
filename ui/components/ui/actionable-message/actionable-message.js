@@ -11,7 +11,6 @@ const CLASSNAME_WITH_RIGHT_BUTTON = 'actionable-message--with-right-button';
 const typeHash = {
   warning: CLASSNAME_WARNING,
   danger: CLASSNAME_DANGER,
-  default: '',
 };
 
 export default function ActionableMessage({
@@ -21,7 +20,7 @@ export default function ActionableMessage({
   className = '',
   infoTooltipText = '',
   withRightButton = false,
-  type = 'default',
+  type = false,
   useIcon = false,
   iconFillColor = '',
 }) {
@@ -35,7 +34,7 @@ export default function ActionableMessage({
 
   return (
     <div className={actionableMessageClassName}>
-      {useIcon ? <InfoTooltipIcon fillColor={iconFillColor} /> : null}
+      {useIcon && <InfoTooltipIcon fillColor={iconFillColor} />}
       {infoTooltipText && (
         <InfoTooltip
           position="left"

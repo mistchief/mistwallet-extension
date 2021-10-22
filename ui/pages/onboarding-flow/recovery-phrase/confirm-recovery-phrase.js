@@ -11,18 +11,15 @@ import {
   JUSTIFY_CONTENT,
   FONT_WEIGHT,
 } from '../../../helpers/constants/design-system';
-import {
-  ThreeStepProgressBar,
-  threeStepStages,
-} from '../../../components/app/step-progress-bar';
-import { ONBOARDING_COMPLETION_ROUTE } from '../../../helpers/constants/routes';
+import { INITIALIZE_END_OF_FLOW_ROUTE } from '../../../helpers/constants/routes';
+import ProgressBar from '../../../components/app/step-progress-bar';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import RecoveryPhraseChips from './recovery-phrase-chips';
 
-export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
+export default function ConfirmRecoveryPhrase({ seedPhrase = '' }) {
   const history = useHistory();
   const t = useI18nContext();
-  const splitSecretRecoveryPhrase = secretRecoveryPhrase.split(' ');
+  const splitSeedPhrase = seedPhrase.split(' ');
   const indicesToCheck = [2, 3, 7];
   const [matching, setMatching] = useState(false);
 
@@ -30,7 +27,7 @@ export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
   // indicesToCheck so that user has to complete the phrase and confirm
   // they have saved it.
   const initializePhraseElements = () => {
-    const phraseElements = { ...splitSecretRecoveryPhrase };
+    const phraseElements = { ...splitSeedPhrase };
     indicesToCheck.forEach((i) => {
       phraseElements[i] = '';
     });
@@ -43,9 +40,9 @@ export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
   const validate = useMemo(
     () =>
       debounce((elements) => {
-        setMatching(Object.values(elements).join(' ') === secretRecoveryPhrase);
+        setMatching(Object.values(elements).join(' ') === seedPhrase);
       }, 500),
-    [setMatching, secretRecoveryPhrase],
+    [setMatching, seedPhrase],
   );
 
   const handleSetPhraseElements = (values) => {
@@ -55,7 +52,7 @@ export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
 
   return (
     <div>
-      <ThreeStepProgressBar stage={threeStepStages.RECOVERY_PHRASE_CONFIRM} />
+      <ProgressBar stage="SEED_PHRASE_CONFIRM" />
       <Box
         justifyContent={JUSTIFY_CONTENT.CENTER}
         textAlign={TEXT_ALIGN.CENTER}
@@ -75,7 +72,7 @@ export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
         </Typography>
       </Box>
       <RecoveryPhraseChips
-        secretRecoveryPhrase={splitSecretRecoveryPhrase}
+        seedPhrase={splitSeedPhrase}
         confirmPhase
         setInputValue={handleSetPhraseElements}
         inputValue={phraseElements}
@@ -86,7 +83,7 @@ export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
           type="primary"
           className="recovery-phrase__footer--button"
           onClick={() => {
-            history.push(ONBOARDING_COMPLETION_ROUTE);
+            history.push(INITIALIZE_END_OF_FLOW_ROUTE);
           }}
           disabled={!matching}
         >
@@ -98,5 +95,5 @@ export default function ConfirmRecoveryPhrase({ secretRecoveryPhrase = '' }) {
 }
 
 ConfirmRecoveryPhrase.propTypes = {
-  secretRecoveryPhrase: PropTypes.string,
+  seedPhrase: PropTypes.string,
 };

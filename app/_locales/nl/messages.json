@@ -16,7 +16,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -154,7 +154,7 @@
     "message": "Account importeren"
   },
   "importAccountMsg": {
-    "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte MetaMask-account. Meer informatie over geïmporteerde accounts"
+    "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte MistWallet-account. Meer informatie over geïmporteerde accounts"
   },
   "imported": {
     "message": "geïmporteerd",
@@ -204,7 +204,7 @@
     "message": "Bericht"
   },
   "metamaskDescription": {
-    "message": "MetaMask is een veilige identiteitskluis voor Ethereum."
+    "message": "MistWallet is een veilige identiteitskluis voor Ethereum."
   },
   "mustSelectOne": {
     "message": "Moet ten minste één token selecteren."
@@ -213,7 +213,7 @@
     "message": "Mijn accounts"
   },
   "needEtherInWallet": {
-    "message": "Om te communiceren met gedecentraliseerde applicaties met MetaMask, heb je Ether nodig in je portemonnee."
+    "message": "Om te communiceren met gedecentraliseerde applicaties met MistWallet, heb je Ether nodig in je portemonnee."
   },
   "needImportFile": {
     "message": "U moet een bestand selecteren om te importeren.",
@@ -382,7 +382,7 @@
     "message": "Bezoek onze website"
   },
   "welcome": {
-    "message": "Welkom bij MetaMask"
+    "message": "Welkom bij MistWallet"
   },
   "youSign": {
     "message": "U ondertekent"

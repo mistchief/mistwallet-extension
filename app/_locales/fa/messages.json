@@ -30,7 +30,7 @@
     "message": "دفترچه فعالیت"
   },
   "addAcquiredTokens": {
-    "message": "رمزیاب های را که با استفاده از MetaMask بدست آورده اید، اضافه کنید"
+    "message": "رمزیاب های را که با استفاده از MistWallet بدست آورده اید، اضافه کنید"
   },
   "addAlias": {
     "message": "نام مستعار اضافه کنید"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -95,7 +95,7 @@
     "message": "زمان سنج خروج-خودکار (دقایق)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "زمان های بیکار را به شکل دقیقه قبل از خروج MetaMask تنظیم کنید"
+    "message": "زمان های بیکار را به شکل دقیقه قبل از خروج MistWallet تنظیم کنید"
   },
   "average": {
     "message": "اوسط"
@@ -107,7 +107,7 @@
     "message": "برگشت به همه"
   },
   "backupApprovalInfo": {
-    "message": "در صورت مفقود شدن دستگاه، فراموش شدن رمز عبور، لزوم نصب-دوباره MetaMask، یا اقدام دسترسی به کیف تان از دستگاه دیگر، کود مخفی جهت بازیابی کیف تان، لازم خواهد بود."
+    "message": "در صورت مفقود شدن دستگاه، فراموش شدن رمز عبور، لزوم نصب-دوباره MistWallet، یا اقدام دسترسی به کیف تان از دستگاه دیگر، کود مخفی جهت بازیابی کیف تان، لازم خواهد بود."
   },
   "backupApprovalNotice": {
     "message": "کود مخفی بازیابی تان را بخاطر امنیت کیف و پول های تان، پشتیبانی بگیرید."
@@ -141,7 +141,7 @@
     "message": "ETH را توسط Wyre خریداری نمایید"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre به شما اجازه میدهد تا یک کردیت کارت را جهت پرداخت ETH مستقیمًا به حساب MetaMask تان استفاده نمایید."
+    "message": "Wyre به شما اجازه میدهد تا یک کردیت کارت را جهت پرداخت ETH مستقیمًا به حساب MistWallet تان استفاده نمایید."
   },
   "bytes": {
     "message": "بایت ها"
@@ -159,7 +159,7 @@
     "message": "آی دی زنجیره"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "برای وصل شدن به کیف سخت افزار شما باید MetaMask را در گوگل کروم استفاده نمایید."
+    "message": "برای وصل شدن به کیف سخت افزار شما باید MistWallet را در گوگل کروم استفاده نمایید."
   },
   "clickToRevealSeed": {
     "message": "برای آشکار سازی کلمات مخفی اینجا کلیک نمایید"
@@ -333,13 +333,13 @@
     "message": "هرگز عبارت را با هیچکس در میان نگذارید."
   },
   "endOfFlowMessage5": {
-    "message": "مراقب فیشینگ باشید! MetaMask هرگز در یک زمان عبارت بازیاب را نمی پرسد."
+    "message": "مراقب فیشینگ باشید! MistWallet هرگز در یک زمان عبارت بازیاب را نمی پرسد."
   },
   "endOfFlowMessage6": {
     "message": "در صورتیکه شما نیاز به گرفتن دوباره پشتیبان عبارت بازیاب داشته باشید، میتوانید آنرا در Settings -> Security دریافت نمایید."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask نمیتواند عبارت بازیاب تان را دوباره دریافت نماید.\nبیشتر بدانید."
+    "message": "MistWallet نمیتواند عبارت بازیاب تان را دوباره دریافت نماید.\nبیشتر بدانید."
   },
   "endOfFlowMessage9": {
     "message": "بیشتر بدانید."
@@ -476,7 +476,7 @@
     "message": "وارد سازی حساب"
   },
   "importAccountMsg": {
-    "message": "حساب های وارد شده با عبارت بازیاب حساب MetaMask ایجاد شده اصلی تان یکجا نمیباشد. در مورد حساب های وارد شده بیشتر بدانید"
+    "message": "حساب های وارد شده با عبارت بازیاب حساب MistWallet ایجاد شده اصلی تان یکجا نمیباشد. در مورد حساب های وارد شده بیشتر بدانید"
   },
   "importAccountSeedPhrase": {
     "message": "یک حساب با عبارت بازیاب را وارد کنید"
@@ -577,7 +577,7 @@
     "message": "در حال اتصال شما با ایترم و وب غیر متمرکز شده."
   },
   "metamaskVersion": {
-    "message": "نسخه MetaMask"
+    "message": "نسخه MistWallet"
   },
   "mustSelectOne": {
     "message": "باید حداقل 1 رمزیاب را انتخاب کنید."
@@ -586,7 +586,7 @@
     "message": "حساب های من"
   },
   "needEtherInWallet": {
-    "message": "برای تعامل با اپلیکیشن های غیر متمرکز شده با استفاده از MetaMask، شما نیاز به ایتر در کیف تان خواهید داشت."
+    "message": "برای تعامل با اپلیکیشن های غیر متمرکز شده با استفاده از MistWallet، شما نیاز به ایتر در کیف تان خواهید داشت."
   },
   "needImportFile": {
     "message": "شما باید یک فایل برای وارد کردن را انتخاب کنید.",
@@ -629,8 +629,8 @@
   "newPassword": {
     "message": "رمز عبور جدید (حداقل 8 حرف)"
   },
-  "newToMetaMask": {
-    "message": "آیا به MetaMask جدید هستید؟"
+  "newToMistWallet": {
+    "message": "آیا به MistWallet جدید هستید؟"
   },
   "newTotal": {
     "message": "مجموع جدید"
@@ -690,7 +690,7 @@
     "message": "اشتراک در MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "در MetaMetrics اشتراک نمایید تا به ما کمک شود MetaMask را بهتر بسازیم"
+    "message": "در MetaMetrics اشتراک نمایید تا به ما کمک شود MistWallet را بهتر بسازیم"
   },
   "password": {
     "message": "گذرواژه"
@@ -799,6 +799,9 @@
   "revealSeedWordsDescription": {
     "message": "در صورتیکه شما معمولًا براوزر ها را تغییر داده یا کمپیوتر ها را انتقال میدهید، شما این عبارت آغازین را نیاز خواهید داشت تا به حساب های تان دسترسی داشته باشید. آنها را در یکجای مصؤن و مخفی نگهدارید."
   },
+  "revealSeedWordsTitle": {
+    "message": "عبارت بازیاب"
+  },
   "revealSeedWordsWarning": {
     "message": "این کلمات را میتوان جهت سرقت همه حساب های تان استفاده نمود."
   },
@@ -835,6 +838,9 @@
   "searchTokens": {
     "message": "رمزیاب های جستجو"
   },
+  "secretBackupPhrase": {
+    "message": "عبارت مخفی پشتیبان"
+  },
   "secretBackupPhraseDescription": {
     "message": "عبارت مخفی پشتیبان تان نسخه پشتیبان و دوباره سازی حساب را تسهیل میسازد."
   },
@@ -860,7 +866,7 @@
     "message": "یک حساب را انتخاب کنید"
   },
   "selectAnAccountHelp": {
-    "message": "برای مشاهده MetaMask حساب را انتخاب نمایید"
+    "message": "برای مشاهده MistWallet حساب را انتخاب نمایید"
   },
   "selectEachPhrase": {
     "message": "لطفًا جهت اطمینان از درستی، هر عبارت را انتخاب کنید."
@@ -974,16 +980,16 @@
     "message": "مطمئن شوید که هیچکس هنگامیکه این کود را سکن میکنید، به صفحه شما نمیبیند"
   },
   "syncWithMobileComplete": {
-    "message": "دیتای شما موفقانه همگام سازی شد. از اپلیکیشن موبایل MetaMask لذت ببرید!"
+    "message": "دیتای شما موفقانه همگام سازی شد. از اپلیکیشن موبایل MistWallet لذت ببرید!"
   },
   "syncWithMobileDesc": {
-    "message": "شما میتوانید حساب ها و معلومات خویش را با دستگاه موبایل تان همگام بسازید. اپلیکیشن MetaMask را باز نموده به \"Settings\" رفته و بالای \"Sync from Browser Extension\" کلیک کنید"
+    "message": "شما میتوانید حساب ها و معلومات خویش را با دستگاه موبایل تان همگام بسازید. اپلیکیشن MistWallet را باز نموده به \"Settings\" رفته و بالای \"Sync from Browser Extension\" کلیک کنید"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "در صورتیکه شما اپلیکیشن موبایل MetaMask را برای بار اول باز کرده اید، فقط گام ها را در موبایل تان دنبال نمایید."
+    "message": "در صورتیکه شما اپلیکیشن موبایل MistWallet را برای بار اول باز کرده اید، فقط گام ها را در موبایل تان دنبال نمایید."
   },
   "syncWithMobileScanThisCode": {
-    "message": "این کود را با اپلیکیشن موبایل MetaMask سکن نمایید"
+    "message": "این کود را با اپلیکیشن موبایل MistWallet سکن نمایید"
   },
   "syncWithMobileTitle": {
     "message": "همگام سازی با موبایل"
@@ -1074,7 +1080,7 @@
     "message": "امتحان مجدد"
   },
   "typePassword": {
-    "message": "رمز عبور MetaMask تان را تایپ نمایید"
+    "message": "رمز عبور MistWallet تان را تایپ نمایید"
   },
   "unapproved": {
     "message": "تصدیق ناشده"
@@ -1124,8 +1130,11 @@
   "visitWebSite": {
     "message": "از وب سایت ما دیدن نمایید"
   },
+  "walletSeed": {
+    "message": "بازیاب کیف"
+  },
   "welcome": {
-    "message": "به MetaMask خوش آمدید"
+    "message": "به MistWallet خوش آمدید"
   },
   "welcomeBack": {
     "message": "بازگشت شما را خوش‌آمد می‌گوییم!"

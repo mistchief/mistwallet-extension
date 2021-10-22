@@ -364,6 +364,7 @@ export default class MetamaskController extends EventEmitter {
 
     this.onboardingController = new OnboardingController({
       initState: initState.OnboardingController,
+      preferencesController: this.preferencesController,
     });
 
     this.tokensController.hub.on('pendingSuggestedAsset', async () => {
@@ -379,7 +380,7 @@ export default class MetamaskController extends EventEmitter {
     this.keyringController.memStore.subscribe((state) =>
       this._onKeyringControllerUpdate(state),
     );
-    this.keyringController.on('unlock', () => this._onUnlock());
+    this.keyringController.on('unlock', () => this.emit('unlock'));
     this.keyringController.on('lock', () => this._onLock());
 
     this.permissionsController = new PermissionsController(
@@ -628,7 +629,7 @@ export default class MetamaskController extends EventEmitter {
     if (
       password &&
       !this.isUnlocked() &&
-      this.onboardingController.store.getState().completedOnboarding
+      this.onboardingController.completedOnboarding
     ) {
       this.submitPassword(password);
     }
@@ -656,7 +657,7 @@ export default class MetamaskController extends EventEmitter {
     const providerOpts = {
       static: {
         eth_syncing: false,
-        web3_clientVersion: `MetaMask/v${version}`,
+        web3_clientVersion: `MistWallet/v${version}`,
       },
       version,
       // account mgmt
@@ -748,7 +749,7 @@ export default class MetamaskController extends EventEmitter {
   /**
    * Gets network state relevant for external providers.
    *
-   * @param {Object} [memState] - The MetaMask memState. If not provided,
+   * @param {Object} [memState] - The MistWallet memState. If not provided,
    * this function will retrieve the most recent state.
    * @returns {Object} An object with relevant network state properties.
    */
@@ -819,6 +820,7 @@ export default class MetamaskController extends EventEmitter {
       ),
       setIpfsGateway: this.setIpfsGateway.bind(this),
       setParticipateInMetaMetrics: this.setParticipateInMetaMetrics.bind(this),
+      setFirstTimeFlowType: this.setFirstTimeFlowType.bind(this),
       setCurrentLocale: this.setCurrentLocale.bind(this),
       markPasswordForgotten: this.markPasswordForgotten.bind(this),
       unMarkPasswordForgotten: this.unMarkPasswordForgotten.bind(this),
@@ -841,10 +843,7 @@ export default class MetamaskController extends EventEmitter {
         this.unlockHardwareWalletAccount,
         this,
       ),
-      setLedgerTransportPreference: nodeify(
-        this.setLedgerTransportPreference,
-        this,
-      ),
+      setLedgerLivePreference: nodeify(this.setLedgerLivePreference, this),
 
       // mobile
       fetchInfoToSync: nodeify(this.fetchInfoToSync, this),
@@ -900,7 +899,10 @@ export default class MetamaskController extends EventEmitter {
         preferencesController.setPreference,
         preferencesController,
       ),
-
+      completeOnboarding: nodeify(
+        preferencesController.completeOnboarding,
+        preferencesController,
+      ),
       addKnownMethodData: nodeify(
         preferencesController.addKnownMethodData,
         preferencesController,
@@ -999,14 +1001,6 @@ export default class MetamaskController extends EventEmitter {
       // onboarding controller
       setSeedPhraseBackedUp: nodeify(
         onboardingController.setSeedPhraseBackedUp,
-        onboardingController,
-      ),
-      completeOnboarding: nodeify(
-        onboardingController.completeOnboarding,
-        onboardingController,
-      ),
-      setFirstTimeFlowType: nodeify(
-        onboardingController.setFirstTimeFlowType,
         onboardingController,
       ),
 
@@ -1483,9 +1477,9 @@ export default class MetamaskController extends EventEmitter {
     // keyring's iframe and have the setting initialized properly
     // Optimistically called to not block Metamask login due to
     // Ledger Keyring GitHub downtime
-    const transportPreference = this.preferencesController.getLedgerTransportPreference();
-
-    this.setLedgerTransportPreference(transportPreference);
+    this.setLedgerLivePreference(
+      this.preferencesController.getLedgerLivePreference(),
+    );
 
     return this.keyringController.fullUpdate();
   }
@@ -1803,7 +1797,7 @@ export default class MetamaskController extends EventEmitter {
    * @returns {Promise<Object>} Full state update.
    */
   signMessage(msgParams) {
-    log.info('MetaMaskController - signMessage');
+    log.info('MistWalletController - signMessage');
     const msgId = msgParams.metamaskId;
 
     // sets the status op the message to 'approved'
@@ -1867,7 +1861,7 @@ export default class MetamaskController extends EventEmitter {
    * @returns {Promise<Object>} A full state update.
    */
   signPersonalMessage(msgParams) {
-    log.info('MetaMaskController - signPersonalMessage');
+    log.info('MistWalletController - signPersonalMessage');
     const msgId = msgParams.metamaskId;
     // sets the status op the message to 'approved'
     // and removes the metamaskId for signing
@@ -1925,7 +1919,7 @@ export default class MetamaskController extends EventEmitter {
    * @returns {Promise<Object>} A full state update.
    */
   async decryptMessageInline(msgParams) {
-    log.info('MetaMaskController - decryptMessageInline');
+    log.info('MistWalletController - decryptMessageInline');
     // decrypt the message inline
     const msgId = msgParams.metamaskId;
     const msg = this.decryptMessageManager.getMsg(msgId);
@@ -1951,7 +1945,7 @@ export default class MetamaskController extends EventEmitter {
    * @returns {Promise<Object>} A full state update.
    */
   async decryptMessage(msgParams) {
-    log.info('MetaMaskController - decryptMessage');
+    log.info('MistWalletController - decryptMessage');
     const msgId = msgParams.metamaskId;
     // sets the status op the message to 'approved'
     // and removes the metamaskId for decryption
@@ -1971,7 +1965,7 @@ export default class MetamaskController extends EventEmitter {
       // tells the listener that the message has been decrypted and can be returned to the dapp
       this.decryptMessageManager.setMsgStatusDecrypted(msgId, rawMess);
     } catch (error) {
-      log.info('MetaMaskController - eth_decrypt failed.', error);
+      log.info('MistWalletController - eth_decrypt failed.', error);
       this.decryptMessageManager.errorMessage(msgId, error);
     }
     return this.getState();
@@ -2041,7 +2035,7 @@ export default class MetamaskController extends EventEmitter {
    * @returns {Promise<Object>} A full state update.
    */
   async encryptionPublicKey(msgParams) {
-    log.info('MetaMaskController - encryptionPublicKey');
+    log.info('MistWalletController - encryptionPublicKey');
     const msgId = msgParams.metamaskId;
     // sets the status op the message to 'approved'
     // and removes the metamaskId for decryption
@@ -2060,7 +2054,7 @@ export default class MetamaskController extends EventEmitter {
       this.encryptionPublicKeyManager.setMsgStatusReceived(msgId, publicKey);
     } catch (error) {
       log.info(
-        'MetaMaskController - eth_getEncryptionPublicKey failed.',
+        'MistWalletController - eth_getEncryptionPublicKey failed.',
         error,
       );
       this.encryptionPublicKeyManager.errorMessage(msgId, error);
@@ -2109,7 +2103,7 @@ export default class MetamaskController extends EventEmitter {
    * @returns {Object} Full state update.
    */
   async signTypedMessage(msgParams) {
-    log.info('MetaMaskController - eth_signTypedData');
+    log.info('MistWalletController - eth_signTypedData');
     const msgId = msgParams.metamaskId;
     const { version } = msgParams;
     try {
@@ -2132,7 +2126,7 @@ export default class MetamaskController extends EventEmitter {
       this.typedMessageManager.setMsgStatusSigned(msgId, signature);
       return this.getState();
     } catch (error) {
-      log.info('MetaMaskController - eth_signTypedData failed.', error);
+      log.info('MistWalletController - eth_signTypedData failed.', error);
       this.typedMessageManager.errorMessage(msgId, error);
       throw error;
     }
@@ -2179,7 +2173,7 @@ export default class MetamaskController extends EventEmitter {
    *  './controllers/transactions'
    * ).CustomGasSettings} [customGasSettings] - overrides to use for gas params
    *  instead of allowing this method to generate them
-   * @returns {Object} MetaMask state
+   * @returns {Object} MistWallet state
    */
   async createCancelTransaction(
     originalTxId,
@@ -2204,7 +2198,7 @@ export default class MetamaskController extends EventEmitter {
    *  './controllers/transactions'
    * ).CustomGasSettings} [customGasSettings] - overrides to use for gas params
    *  instead of allowing this method to generate them
-   * @returns {Object} MetaMask state
+   * @returns {Object} MistWallet state
    */
   async createSpeedUpTransaction(
     originalTxId,
@@ -2280,7 +2274,7 @@ export default class MetamaskController extends EventEmitter {
     const { hostname } = new URL(sender.url);
     // Check if new connection is blocked if phishing detection is on
     if (usePhishDetect && this.phishingController.test(hostname)) {
-      log.debug('MetaMask - sending phishing warning for', hostname);
+      log.debug('MistWallet - sending phishing warning for', hostname);
       this.sendPhishingWarning(connectionStream, hostname);
       return;
     }
@@ -2632,10 +2626,10 @@ export default class MetamaskController extends EventEmitter {
         ? (origin) => payload(origin)
         : () => payload;
 
-    Object.keys(this.connections).forEach((origin) => {
-      Object.values(this.connections[origin]).forEach(async (conn) => {
+    Object.values(this.connections).forEach((origin) => {
+      Object.values(origin).forEach((conn) => {
         if (conn.engine) {
-          conn.engine.emit('notification', await getPayload(origin));
+          conn.engine.emit('notification', getPayload(origin));
         }
       });
     });
@@ -2670,12 +2664,12 @@ export default class MetamaskController extends EventEmitter {
    * Notifies all connections that the extension is unlocked.
    */
   _onUnlock() {
-    this.notifyAllConnections(async (origin) => {
+    this.notifyAllConnections((origin) => {
       return {
         method: NOTIFICATION_NAMES.unlockStateChanged,
         params: {
           isUnlocked: true,
-          accounts: await this.permissionsController.getAccounts(origin),
+          accounts: this.permissionsController.getAccounts(origin),
         },
       };
     });
@@ -2713,7 +2707,7 @@ export default class MetamaskController extends EventEmitter {
   // misc
 
   /**
-   * A method for emitting the full MetaMask state to all registered listeners.
+   * A method for emitting the full MistWallet state to all registered listeners.
    * @private
    */
   privateSendUpdate() {
@@ -2987,18 +2981,16 @@ export default class MetamaskController extends EventEmitter {
    * Sets the Ledger Live preference to use for Ledger hardware wallet support
    * @param {bool} bool - the value representing if the users wants to use Ledger Live
    */
-  async setLedgerTransportPreference(transportType) {
-    const currentValue = this.preferencesController.getLedgerTransportPreference();
-    const newValue = this.preferencesController.setLedgerTransportPreference(
-      transportType,
-    );
+  async setLedgerLivePreference(bool) {
+    const currentValue = this.preferencesController.getLedgerLivePreference();
+    this.preferencesController.setLedgerLivePreference(bool);
 
     const keyring = await this.getKeyringForDevice('ledger');
     if (keyring?.updateTransportMethod) {
-      return keyring.updateTransportMethod(newValue).catch((e) => {
+      return keyring.updateTransportMethod(bool).catch((e) => {
         // If there was an error updating the transport, we should
         // fall back to the original value
-        this.preferencesController.setLedgerTransportPreference(currentValue);
+        this.preferencesController.setLedgerLivePreference(currentValue);
         throw e;
       });
     }
@@ -3017,6 +3009,23 @@ export default class MetamaskController extends EventEmitter {
         bool,
       );
       cb(null, metaMetricsId);
+      return;
+    } catch (err) {
+      cb(err);
+      // eslint-disable-next-line no-useless-return
+      return;
+    }
+  }
+
+  /**
+   * Sets the type of first time flow the user wishes to follow: create or import
+   * @param {string} type - Indicates the type of first time flow the user wishes to follow
+   * @param {Function} cb - A callback function called when complete.
+   */
+  setFirstTimeFlowType(type, cb) {
+    try {
+      this.preferencesController.setFirstTimeFlowType(type);
+      cb(null);
       return;
     } catch (err) {
       cb(err);
@@ -3060,7 +3069,7 @@ export default class MetamaskController extends EventEmitter {
   // TODO: Replace isClientOpen methods with `controllerConnectionChanged` events.
   /* eslint-disable accessor-pairs */
   /**
-   * A method for recording whether the MetaMask user interface is open or not.
+   * A method for recording whether the MistWallet user interface is open or not.
    * @param {boolean} open
    */
   set isClientOpen(open) {
@@ -3110,7 +3119,7 @@ export default class MetamaskController extends EventEmitter {
   }
 
   /**
-   * Locks MetaMask
+   * Locks MistWallet
    */
   setLocked() {
     return this.keyringController.setLocked();

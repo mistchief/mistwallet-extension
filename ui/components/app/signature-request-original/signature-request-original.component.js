@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { stripHexPrefix } from 'ethereumjs-util';
 import classnames from 'classnames';
 import { ObjectInspector } from 'react-inspector';
-import LedgerInstructionField from '../ledger-instruction-field';
 
 import {
   ENVIRONMENT_TYPE_NOTIFICATION,
@@ -37,8 +36,6 @@ export default class SignatureRequestOriginal extends Component {
     sign: PropTypes.func.isRequired,
     txData: PropTypes.object.isRequired,
     domainMetadata: PropTypes.object,
-    hardwareWalletRequiresConnection: PropTypes.bool,
-    isLedgerWallet: PropTypes.bool,
   };
 
   state = {
@@ -288,10 +285,7 @@ export default class SignatureRequestOriginal extends Component {
       history,
       mostRecentOverviewPage,
       sign,
-      txData: { type },
-      hardwareWalletRequiresConnection,
     } = this.props;
-    const { metricsEvent, t } = this.context;
 
     return (
       <div className="request-signature__footer">
@@ -302,46 +296,39 @@ export default class SignatureRequestOriginal extends Component {
           onClick={async (event) => {
             this._removeBeforeUnload();
             await cancel(event);
-            metricsEvent({
+            this.context.metricsEvent({
               eventOpts: {
                 category: 'Transactions',
                 action: 'Sign Request',
                 name: 'Cancel',
-              },
-              customVariables: {
-                type,
               },
             });
             clearConfirmTransaction();
             history.push(mostRecentOverviewPage);
           }}
         >
-          {t('cancel')}
+          {this.context.t('cancel')}
         </Button>
         <Button
           data-testid="request-signature__sign"
           type="primary"
           large
           className="request-signature__footer__sign-button"
-          disabled={hardwareWalletRequiresConnection}
           onClick={async (event) => {
             this._removeBeforeUnload();
             await sign(event);
-            metricsEvent({
+            this.context.metricsEvent({
               eventOpts: {
                 category: 'Transactions',
                 action: 'Sign Request',
                 name: 'Confirm',
-              },
-              customVariables: {
-                type,
               },
             });
             clearConfirmTransaction();
             history.push(mostRecentOverviewPage);
           }}
         >
-          {t('sign')}
+          {this.context.t('sign')}
         </Button>
       </div>
     );
@@ -352,11 +339,6 @@ export default class SignatureRequestOriginal extends Component {
       <div className="request-signature__container">
         {this.renderHeader()}
         {this.renderBody()}
-        {this.props.isLedgerWallet ? (
-          <div className="confirm-approve-content__ledger-instruction-wrapper">
-            <LedgerInstructionField showDataInstruction />
-          </div>
-        ) : null}
         {this.renderFooter()}
       </div>
     );

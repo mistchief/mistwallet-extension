@@ -30,7 +30,7 @@
     "message": "aktivitetslogg"
   },
   "addAcquiredTokens": {
-    "message": "Lägg till de tokens du har skaffat med MetaMask"
+    "message": "Lägg till de tokens du har skaffat med MistWallet"
   },
   "addAlias": {
     "message": "Lägg till alias"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -95,7 +95,7 @@
     "message": "Timer för automatisk utloggning (minuter)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Ställ in efter hur lång tids inaktivitet som MetaMask automatiskt loggar ut"
+    "message": "Ställ in efter hur lång tids inaktivitet som MistWallet automatiskt loggar ut"
   },
   "average": {
     "message": "Genomsnitt"
@@ -107,7 +107,7 @@
     "message": "Tillbaka till Alla"
   },
   "backupApprovalInfo": {
-    "message": "Den hemliga koden krävs för att komma åt din plånbok ifall du tappar bort din enhet, glömmer ditt lösenord, behöver installera om MetaMask eller om du vill komma åt din plånbok på en annan enhet."
+    "message": "Den hemliga koden krävs för att komma åt din plånbok ifall du tappar bort din enhet, glömmer ditt lösenord, behöver installera om MistWallet eller om du vill komma åt din plånbok på en annan enhet."
   },
   "backupApprovalNotice": {
     "message": "Säkerhetskopiera din hemliga återställningskod för att se till att din plånbok och dina tillgångar är säkra."
@@ -141,7 +141,7 @@
     "message": "Köp ETH med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre låter dig använda ett kreditkort för att sätta in ETH direkt på ditt MetaMask-konto."
+    "message": "Wyre låter dig använda ett kreditkort för att sätta in ETH direkt på ditt MistWallet-konto."
   },
   "cancel": {
     "message": "Avbryt"
@@ -153,7 +153,7 @@
     "message": "Avbruten"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Du måste använda MetaMask på Google Chrome för att ansluta till din hårdvaruplånbok."
+    "message": "Du måste använda MistWallet på Google Chrome för att ansluta till din hårdvaruplånbok."
   },
   "clickToRevealSeed": {
     "message": "Klicka här för att visa hemliga ord"
@@ -327,13 +327,13 @@
     "message": "Dela aldrig frasen med någon."
   },
   "endOfFlowMessage5": {
-    "message": "Se upp för nätfiske! MetaMask kommer aldrig att oväntat fråga om din seed phrase."
+    "message": "Se upp för nätfiske! MistWallet kommer aldrig att oväntat fråga om din seed phrase."
   },
   "endOfFlowMessage6": {
     "message": "Om du behöver säkerhetskopiera din nyckelfras igen, kan du hitta den i Inställningar -> Säkerhet"
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask kan inte återställa din seedphrase. Läs mer."
+    "message": "MistWallet kan inte återställa din seedphrase. Läs mer."
   },
   "endOfFlowMessage9": {
     "message": "Lär dig mer."
@@ -440,7 +440,7 @@
     "message": "Anslut en hårdvaruplånbok"
   },
   "hardwareWalletsMsg": {
-    "message": "Välj en hårdvaruplånbok som du vill använda med MetaMask"
+    "message": "Välj en hårdvaruplånbok som du vill använda med MistWallet"
   },
   "here": {
     "message": "här",
@@ -466,7 +466,7 @@
     "message": "Importera konto"
   },
   "importAccountMsg": {
-    "message": "Importerade konton kommer inte att kopplas till din ursprungligen skapade seedphrase för ditt MetaMask-konto. Läs mer om importerade konton"
+    "message": "Importerade konton kommer inte att kopplas till din ursprungligen skapade seedphrase för ditt MistWallet-konto. Läs mer om importerade konton"
   },
   "importAccountSeedPhrase": {
     "message": "Importera konto med"
@@ -561,7 +561,7 @@
     "message": "Ansluter dig mot Ethereum och den decentraliserade webben."
   },
   "metamaskVersion": {
-    "message": "MetaMask-version"
+    "message": "MistWallet-version"
   },
   "mustSelectOne": {
     "message": "Minst 1 token måste väljas."
@@ -570,7 +570,7 @@
     "message": "Mina konton"
   },
   "needEtherInWallet": {
-    "message": "För att interagera med decentraliserade applikationer med MetaMask behöver du Ether i din plånbok."
+    "message": "För att interagera med decentraliserade applikationer med MistWallet behöver du Ether i din plånbok."
   },
   "needImportFile": {
     "message": "Du måste välja en fil att importera.",
@@ -613,8 +613,8 @@
   "newPassword": {
     "message": "Nytt lösenord (minst 8 tecken)"
   },
-  "newToMetaMask": {
-    "message": "Ny på MetaMask?"
+  "newToMistWallet": {
+    "message": "Ny på MistWallet?"
   },
   "newTotal": {
     "message": "Ny totalsumma"
@@ -674,7 +674,7 @@
     "message": "Delta i MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Delta i MetaMetrics för att hjälpa oss göra MetaMask bättre"
+    "message": "Delta i MetaMetrics för att hjälpa oss göra MistWallet bättre"
   },
   "password": {
     "message": "Lösenord"
@@ -783,6 +783,9 @@
   "revealSeedWordsDescription": {
     "message": "Om du någonsin byter webbläsare eller dator kommer du behöva denna"
   },
+  "revealSeedWordsTitle": {
+    "message": "Seed phrase"
+  },
   "revealSeedWordsWarning": {
     "message": "De här orden kan användas för att stjäla alla dina konton."
   },
@@ -819,6 +822,9 @@
   "searchTokens": {
     "message": "Sök tokens"
   },
+  "secretBackupPhrase": {
+    "message": "Hemlig återställningsfras"
+  },
   "secretBackupPhraseDescription": {
     "message": "Din hemliga backup-fras gör det enkelt att säkerhetskopiera och återställa ditt konto."
   },
@@ -844,7 +850,7 @@
     "message": "Välj ett konto"
   },
   "selectAnAccountHelp": {
-    "message": "Välj konto att visa i MetaMask"
+    "message": "Välj konto att visa i MistWallet"
   },
   "selectEachPhrase": {
     "message": "Välj varje fras för att säkerställa att den är korrekt."
@@ -955,16 +961,16 @@
     "message": "Försäkra dig om att ingen tittar på din skärm när du skannar denna kod"
   },
   "syncWithMobileComplete": {
-    "message": "Din data har nu synkats. Ha det så kul med MetaMasks mobil-app!"
+    "message": "Din data har nu synkats. Ha det så kul med MistWallets mobil-app!"
   },
   "syncWithMobileDesc": {
-    "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna MetaMasks mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
+    "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna MistWallets mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Om du öppnar MetaMask mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
+    "message": "Om du öppnar MistWallet mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Skanna den här koden med din MetaMask mobilapplikation"
+    "message": "Skanna den här koden med din MistWallet mobilapplikation"
   },
   "syncWithMobileTitle": {
     "message": "Synka med mobil"
@@ -1049,7 +1055,7 @@
     "message": "Försök igen"
   },
   "typePassword": {
-    "message": "Ange ditt MetaMask-lösenord"
+    "message": "Ange ditt MistWallet-lösenord"
   },
   "unapproved": {
     "message": "Inte godkänd"
@@ -1099,8 +1105,11 @@
   "visitWebSite": {
     "message": "Besök vår hemsida"
   },
+  "walletSeed": {
+    "message": "Plånboksseed"
+  },
   "welcome": {
-    "message": "Välkommen till MetaMask"
+    "message": "Välkommen till MistWallet"
   },
   "welcomeBack": {
     "message": "Välkommen tillbaka!"

@@ -44,7 +44,7 @@
     "message": "log de atividades"
   },
   "addAcquiredTokens": {
-    "message": "Adicionar os tokens que você adquiriu usando o MetaMask"
+    "message": "Adicionar os tokens que você adquiriu usando o MistWallet"
   },
   "addAlias": {
     "message": "Adicionar alias"
@@ -57,10 +57,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Isso permitirá esta rede ser usada dentro do MetaMask."
+    "message": "Isso permitirá esta rede ser usada dentro do MistWallet."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "O MetaMask não verifica redes personalizadas."
+    "message": "O MistWallet não verifica redes personalizadas."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Saiba mais sobre $1.",
@@ -152,7 +152,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -202,7 +202,7 @@
     "message": "Temporizador com bloqueio automático (minutos)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Defina o tempo ocioso, em minutos, antes de o MetaMask ser bloqueado."
+    "message": "Defina o tempo ocioso, em minutos, antes de o MistWallet ser bloqueado."
   },
   "average": {
     "message": "Média"
@@ -214,7 +214,7 @@
     "message": "Voltar para todos"
   },
   "backupApprovalInfo": {
-    "message": "Este código secreto é obrigatório para recuperar sua carteira caso você perca seu dispositivo, esqueça sua senha, precise reinstalar o MetaMask ou queira acessar sua carteira em outro dispositivo."
+    "message": "Este código secreto é obrigatório para recuperar sua carteira caso você perca seu dispositivo, esqueça sua senha, precise reinstalar o MistWallet ou queira acessar sua carteira em outro dispositivo."
   },
   "backupApprovalNotice": {
     "message": "Faça backup do código secreto de recuperação para manter sua carteira e seus fundos em segurança."
@@ -257,7 +257,7 @@
     "message": "Comprar ETH com Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Com o Wyre, você pode usar um cartão de débito para depositar ETH diretamente na sua conta do MetaMask."
+    "message": "Com o Wyre, você pode usar um cartão de débito para depositar ETH diretamente na sua conta do MistWallet."
   },
   "bytes": {
     "message": "Bytes"
@@ -284,7 +284,7 @@
     "message": "O ID da chain é usado no momento pela rede $1."
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Você precisa usar MetaMask no Google Chrome para se conectar com sua carteira de hardware."
+    "message": "Você precisa usar MistWallet no Google Chrome para se conectar com sua carteira de hardware."
   },
   "clickToRevealSeed": {
     "message": "Clique aqui para revelar palavras secretas"
@@ -348,8 +348,8 @@
     "message": "$1 contas",
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
-  "connectWithMetaMask": {
-    "message": "Conectar-se com MetaMask"
+  "connectWithMistWallet": {
+    "message": "Conectar-se com MistWallet"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Você tem $1 contas conectadas a este site.",
@@ -359,7 +359,7 @@
     "message": "Você tem 1 conta conectada a este site."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "O MetaMask não está conectado a este site. Para conectar-se a um site da Web3, encontre o botão de conexão no site."
+    "message": "O MistWallet não está conectado a este site. Para conectar-se a um site da Web3, encontre o botão de conexão no site."
   },
   "connectedSites": {
     "message": "Sites conectados"
@@ -484,7 +484,7 @@
     "message": "Token personalizado"
   },
   "dataBackupFoundInfo": {
-    "message": "Foi feito backup de alguns dos dados da sua conta durante uma instalação anterior do MetaMask. Isso poderia incluir configurações, contatos e tokens. Gostaria de restaurar esses dados agora?"
+    "message": "Foi feito backup de alguns dos dados da sua conta durante uma instalação anterior do MistWallet. Isso poderia incluir configurações, contatos e tokens. Gostaria de restaurar esses dados agora?"
   },
   "decimal": {
     "message": "Decimal do Token"
@@ -622,7 +622,7 @@
     "message": "Nunca compartilhe essa frase com ninguém."
   },
   "endOfFlowMessage5": {
-    "message": "Cuidado com phishing! O MetaMask jamais pedirá espontaneamente sua Frase de recuperação secreta."
+    "message": "Cuidado com phishing! O MistWallet jamais pedirá espontaneamente sua Frase de recuperação secreta."
   },
   "endOfFlowMessage6": {
     "message": "Se você precisar fazer backup da sua Frase de recuperação secreta novamente, encontre-a em Configurações -> Segurança."
@@ -632,7 +632,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "O MetaMask não pode recuperar sua Frase de recuperação secreta."
+    "message": "O MistWallet não pode recuperar sua Frase de recuperação secreta."
   },
   "endOfFlowMessage9": {
     "message": "Saiba mais."
@@ -684,7 +684,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "O MetaMask encontrou um erro",
+    "message": "O MistWallet encontrou um erro",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -849,7 +849,7 @@
     "message": "Conectar uma carteira de hardware"
   },
   "hardwareWalletsMsg": {
-    "message": "Selecione uma carteira de hardware que você gostaria de usar com o MetaMask."
+    "message": "Selecione uma carteira de hardware que você gostaria de usar com o MistWallet."
   },
   "here": {
     "message": "aqui",
@@ -885,7 +885,7 @@
     "message": "importar usando a Frase de recuperação secreta"
   },
   "importAccountMsg": {
-    "message": " As contas importadas não estarão associadas à Frase de recuperação secreta da conta do MetaMask criada originalmente. Saiba mais sobre as contas importadas "
+    "message": " As contas importadas não estarão associadas à Frase de recuperação secreta da conta do MistWallet criada originalmente. Saiba mais sobre as contas importadas "
   },
   "importAccountSeedPhrase": {
     "message": "Importe uma conta com a Frase de recuperação secreta"
@@ -911,7 +911,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "Não foi possível conectar o MetaMask com o servidor blockchain. Revise possíveis motivos $1.",
+    "message": "Não foi possível conectar o MistWallet com o servidor blockchain. Revise possíveis motivos $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1004,6 +1004,12 @@
   "ledgerAccountRestriction": {
     "message": "Você precisa usar sua última conta antes de adicionar uma nova."
   },
+  "ledgerLiveAdvancedSetting": {
+    "message": "Usar Ledger Live"
+  },
+  "ledgerLiveAdvancedSettingDescription": {
+    "message": "A nova ponte do Ledger Live permite utilizar seu Ledger mais facilmente.  Disponível somente no Chrome."
+  },
   "ledgerLiveApp": {
     "message": "Aplicativo Ledger Live"
   },
@@ -1059,7 +1065,7 @@
     "message": "Mensagem"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Você pode ter mais controle sobre as conexões da sua conta no MetaMask."
+    "message": "Você pode ter mais controle sobre as conexões da sua conta no MistWallet."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Clique para gerenciar suas contas conectadas."
@@ -1071,10 +1077,10 @@
     "message": "Conectando você ao Ethereum e à web descentralizada."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "O MetaMask Swaps está em manutenção. Verifique novamente mais tarde."
+    "message": "O MistWallet Swaps está em manutenção. Verifique novamente mais tarde."
   },
   "metamaskVersion": {
-    "message": "Versão do MetaMask"
+    "message": "Versão do MistWallet"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Sempre permitirá que você cancele o envio dos dados, via Configurações"
@@ -1084,7 +1090,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "O MetaMask..."
+    "message": "O MistWallet..."
   },
   "metametricsCommitmentsNeverCollectIP": {
     "message": "$1 coletará seu endereço IP completo",
@@ -1101,11 +1107,11 @@
   "metametricsCommitmentsSendAnonymizedEvents": {
     "message": "Enviará eventos anonimizados de cliques e visualização de página"
   },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Ajude-nos a melhorar o MetaMask"
+  "metametricsHelpImproveMistWallet": {
+    "message": "Ajude-nos a melhorar o MistWallet"
   },
   "metametricsOptInDescription": {
-    "message": "O MetaMask gostaria de reunir dados de uso para entender melhor como nossos usuários interagem com a extensão. Esses dados serão usados para melhorar continuamente a usabilidade e a experiência do usuário do nosso produto e o ecossistema do Ethereum."
+    "message": "O MistWallet gostaria de reunir dados de uso para entender melhor como nossos usuários interagem com a extensão. Esses dados serão usados para melhorar continuamente a usabilidade e a experiência do usuário do nosso produto e o ecossistema do Ethereum."
   },
   "mismatchedChain": {
     "message": "Os detalhes da rede para este ID da chain não correspondem com nossos registros. Recomendamos que você $1 antes de continuar.",
@@ -1125,14 +1131,14 @@
     "message": "Nome"
   },
   "needEtherInWallet": {
-    "message": "Para interagir com aplicativos descentralizados usando o MetaMask, você precisará de ethers na sua carteira."
+    "message": "Para interagir com aplicativos descentralizados usando o MistWallet, você precisará de ethers na sua carteira."
   },
   "needHelp": {
     "message": "Precisa de ajuda? Contato $1",
     "description": "$1 represents `needHelpLinkText`, the text which goes in the help link"
   },
   "needHelpLinkText": {
-    "message": "Suporte do MetaMask"
+    "message": "Suporte do MistWallet"
   },
   "needImportFile": {
     "message": "É preciso selecionar um arquivo a importar.",
@@ -1199,8 +1205,8 @@
   "newPassword": {
     "message": "Nova senha (mín. 8 caract.)"
   },
-  "newToMetaMask": {
-    "message": "O MetaMask é uma novidade para você?"
+  "newToMistWallet": {
+    "message": "O MistWallet é uma novidade para você?"
   },
   "newTotal": {
     "message": "Novo total"
@@ -1213,7 +1219,7 @@
   },
   "nextNonceWarning": {
     "message": "Nonce é maior que o nonce sugerido de $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to MistWallet's internal logic"
   },
   "noAccountsFound": {
     "message": "Nenhuma conta encontrada para a consulta de busca determinada"
@@ -1258,19 +1264,19 @@
     "message": "Não há gas suficiente"
   },
   "notifications1Description": {
-    "message": "Usuários do MetaMask Mobile agora podem fazer swap dos tokens dentro de sua carteira móvel. Leia o código QR para obter o aplicativo para dispositivos móveis e comece a fazer swap.",
+    "message": "Usuários do MistWallet Mobile agora podem fazer swap dos tokens dentro de sua carteira móvel. Leia o código QR para obter o aplicativo para dispositivos móveis e comece a fazer swap.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
     "message": "Chegou o swap em dispositivos móveis!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MistWallet Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "Ler mais",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Fique ligado nas boas práticas de segurança do MetaMask e obtenha as últimas dicas de segurança no suporte oficial do MetaMask.",
+    "message": "Fique ligado nas boas práticas de segurança do MistWallet e obtenha as últimas dicas de segurança no suporte oficial do MistWallet.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1282,7 +1288,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Obtenha boas práticas sobre swap de tokens diretamente dentro de sua carteira. Agora o MetaMask conecta você a vários agregadores de exchange descentralizados e agentes de liquidez profissionais na Binance Smart Chain.",
+    "message": "Obtenha boas práticas sobre swap de tokens diretamente dentro de sua carteira. Agora o MistWallet conecta você a vários agregadores de exchange descentralizados e agentes de liquidez profissionais na Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -1294,11 +1300,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "A partir do Chrome versão 91, a API que permitia nosso suporte ao Ledger (U2F) não é mais compatível com carteiras de hardware. O MetaMask implementou um novo suporte ao Ledger Live que permite continuar conectando o seu dispositivo Ledger device por meio do aplicativo de desktop Ledger Live.",
+    "message": "A partir do Chrome versão 91, a API que permitia nosso suporte ao Ledger (U2F) não é mais compatível com carteiras de hardware. O MistWallet implementou um novo suporte ao Ledger Live que permite continuar conectando o seu dispositivo Ledger device por meio do aplicativo de desktop Ledger Live.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Ao interagir com sua conta do Ledger no MetaMask, uma nova aba será aberta e você deverá abrir o aplicativo Ledger Live.  Quando o aplicativo for aberto, você precisará permitir uma conexão do WebSocket com sua conta do MetaMask.  É isso!",
+    "message": "Ao interagir com sua conta do Ledger no MistWallet, uma nova aba será aberta e você deverá abrir o aplicativo Ledger Live.  Quando o aplicativo for aberto, você precisará permitir uma conexão do WebSocket com sua conta do MistWallet.  É isso!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1350,7 +1356,7 @@
     "message": "Participe do MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participe do MetaMetrics para nos ajudar a deixar o MetaMask ainda melhor"
+    "message": "Participe do MetaMetrics para nos ajudar a deixar o MistWallet ainda melhor"
   },
   "password": {
     "message": "Senha"
@@ -1449,7 +1455,7 @@
     "message": "Nunca compartilhe a sua Frase de recuperação secreta com ninguém"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "A equipe do MetaMask jamais pedirá sua Frase de recuperação secreta."
+    "message": "A equipe do MistWallet jamais pedirá sua Frase de recuperação secreta."
   },
   "recoveryPhraseReminderSubText": {
     "message": "Sua Frase de recuperação secreta controla todas as suas contas."
@@ -1521,6 +1527,9 @@
   "revealSeedWordsDescription": {
     "message": "Se você alguma vez mudou de navegador ou trocou de computador, precisará dessa Frase de recuperação secreta para acessar suas contas. Salve-as em um lugar seguro e secreto."
   },
+  "revealSeedWordsTitle": {
+    "message": "Frase de recuperação secreta"
+  },
   "revealSeedWordsWarning": {
     "message": "Essas palavras podem ser usadas para roubar todas as suas contas."
   },
@@ -1563,6 +1572,9 @@
   "searchTokens": {
     "message": "Buscar tokens"
   },
+  "secretBackupPhrase": {
+    "message": "Frase secreta de backup"
+  },
   "secretBackupPhraseDescription": {
     "message": "Sua frase secreta de backup facilita fazer o backup e a restauração da sua conta."
   },
@@ -1597,7 +1609,7 @@
     "message": "Caso alguém lhe peça a sua frase de recuperação, essa pessoa provavelmente está tentando dar um golpe em você."
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Jamais compartilhe a sua frase de recuperação, mesmo com o MetaMask!"
+    "message": "Jamais compartilhe a sua frase de recuperação, mesmo com o MistWallet!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "O que é uma frase de recuperação?"
@@ -1636,10 +1648,10 @@
     "message": "Selecionar uma conta"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Esta conta já foi conectada ao MetaMask"
+    "message": "Esta conta já foi conectada ao MistWallet"
   },
   "selectAnAccountHelp": {
-    "message": "Selecione uma conta a ser exibida no MetaMask."
+    "message": "Selecione uma conta a ser exibida no MistWallet."
   },
   "selectAnAccountHelpDirections": {
     "message": "Não está vendo sua conta? $1",
@@ -1768,7 +1780,7 @@
     "message": "Erro ao recuperar os logs de estado."
   },
   "stateLogFileName": {
-    "message": "Logs de estado do MetaMask"
+    "message": "Logs de estado do MistWallet"
   },
   "stateLogs": {
     "message": "Logs de estado"
@@ -1871,7 +1883,7 @@
     "message": "Editar limite"
   },
   "swapEnableDescription": {
-    "message": "Isso é obrigatório e dá ao MetaMask permissão para fazer o swap do seu $1.",
+    "message": "Isso é obrigatório e dá ao MistWallet permissão para fazer o swap do seu $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEstimatedNetworkFee": {
@@ -1926,10 +1938,10 @@
   "swapMaxSlippage": {
     "message": "Slippage máximo"
   },
-  "swapMetaMaskFee": {
-    "message": "Taxa do MetaMask"
+  "swapMistWalletFee": {
+    "message": "Taxa do MistWallet"
   },
-  "swapMetaMaskFeeDescription": {
+  "swapMistWalletFeeDescription": {
     "message": "Encontramos o melhor preço das principais fontes de liquidez – todas as vezes. Uma taxa de $1% é automaticamente fatorada nesta cotação.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
@@ -1938,7 +1950,7 @@
     "description": "$1 is the number of quotes that the user can select from when opening the list of quotes on the 'view quote' screen"
   },
   "swapNetworkFeeSummary": {
-    "message": "A taxa de rede abrange o custo de processamento do seu swap e o armazenamento dele na rede $1. O MetaMask não lucra com essa taxa."
+    "message": "A taxa de rede abrange o custo de processamento do seu swap e o armazenamento dele na rede $1. O MistWallet não lucra com essa taxa."
   },
   "swapNewQuoteIn": {
     "message": "Novas cotações em $1",
@@ -1975,7 +1987,7 @@
     "message": "Quando o preço varia entre o momento em que seu pedido é feito e o momento em que é confirmado, isso recebe o nome de \"slippage\". Seu swap será automaticamente cancelado se o slippage for superior à configuração \"tolerância de slippage\"."
   },
   "swapQuoteIncludesRate": {
-    "message": "A cotação inclui uma taxa de $1% do MetaMask",
+    "message": "A cotação inclui uma taxa de $1% do MistWallet",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapQuoteNofN": {
@@ -2120,7 +2132,7 @@
     "message": "Exibir na atividade"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Isso mudará a rede selecionada dentro do MetaMask para uma rede adicionada anteriormente:"
+    "message": "Isso mudará a rede selecionada dentro do MistWallet para uma rede adicionada anteriormente:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Permitir que este site mude a rede?"
@@ -2156,16 +2168,16 @@
     "message": "Ao ler este código, verifique se não há mais ninguém olhando sua tela"
   },
   "syncWithMobileComplete": {
-    "message": "Seus dados foram sincronizados. Curta o app MetaMask para dispositivos móveis!"
+    "message": "Seus dados foram sincronizados. Curta o app MistWallet para dispositivos móveis!"
   },
   "syncWithMobileDesc": {
-    "message": "Você pode sincronizar suas contas e informações com o dispositivo móvel. Abra o aplicativo MetaMask para dispositivos móveis, acesse \"Configurações\" e toque em \"Sincronizar pela extensão do navegador\""
+    "message": "Você pode sincronizar suas contas e informações com o dispositivo móvel. Abra o aplicativo MistWallet para dispositivos móveis, acesse \"Configurações\" e toque em \"Sincronizar pela extensão do navegador\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Se você tiver acabado de abrir o app MetaMask para dispositivos móveis pela primeira vez, basta seguir as etapas no seu telefone."
+    "message": "Se você tiver acabado de abrir o app MistWallet para dispositivos móveis pela primeira vez, basta seguir as etapas no seu telefone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Leia este código com seu app MetaMask para dispositivos móveis"
+    "message": "Leia este código com seu app MistWallet para dispositivos móveis"
   },
   "syncWithMobileTitle": {
     "message": "Sincronizar com dispositivo móvel"
@@ -2289,7 +2301,7 @@
     "message": "Tente novamente"
   },
   "typePassword": {
-    "message": "Digite sua senha do MetaMask"
+    "message": "Digite sua senha do MistWallet"
   },
   "unapproved": {
     "message": "Desaprovado"
@@ -2380,6 +2392,9 @@
   "walletConnectionGuide": {
     "message": "nosso guia de conexão com a carteira de hardware"
   },
+  "walletSeed": {
+    "message": "Frase de recuperação secreta"
+  },
   "walletSeedRestore": {
     "message": "Frase de recuperação secreta da carteira"
   },
@@ -2388,14 +2403,14 @@
     "description": "$1 is a clickable link."
   },
   "welcome": {
-    "message": "Bem-vindo(a) ao MetaMask"
+    "message": "Bem-vindo(a) ao MistWallet"
   },
   "welcomeBack": {
     "message": "Bem-vindo(a) novamente!"
   },
   "whatsNew": {
     "message": "O que há de novo",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to MistWallet."
   },
   "whatsThis": {
     "message": "O que é isto?"

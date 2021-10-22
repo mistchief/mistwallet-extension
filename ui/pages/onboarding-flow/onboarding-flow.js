@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Switch, Route, useHistory, useLocation } from 'react-router-dom';
+import { Switch, Route, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Unlock from '../unlock-page';
 import {
@@ -7,14 +7,9 @@ import {
   ONBOARDING_REVIEW_SRP_ROUTE,
   ONBOARDING_CONFIRM_SRP_ROUTE,
   ONBOARDING_UNLOCK_ROUTE,
-  ONBOARDING_WELCOME_ROUTE,
   DEFAULT_ROUTE,
   ONBOARDING_SECURE_YOUR_WALLET_ROUTE,
   ONBOARDING_PRIVACY_SETTINGS_ROUTE,
-  ONBOARDING_COMPLETION_ROUTE,
-  ONBOARDING_IMPORT_WITH_SRP_ROUTE,
-  ONBOARDING_PIN_EXTENSION_ROUTE,
-  ONBOARDING_METAMETRICS,
 } from '../../helpers/constants/routes';
 import {
   getCompletedOnboarding,
@@ -25,29 +20,19 @@ import {
 import {
   createNewVaultAndGetSeedPhrase,
   unlockAndGetSeedPhrase,
-  createNewVaultAndRestore,
 } from '../../store/actions';
 import { getFirstTimeFlowTypeRoute } from '../../selectors';
-import Button from '../../components/ui/button';
-import { useI18nContext } from '../../hooks/useI18nContext';
 import OnboardingFlowSwitch from './onboarding-flow-switch/onboarding-flow-switch';
-import CreatePassword from './create-password/create-password';
+import NewAccount from './new-account/new-account';
 import ReviewRecoveryPhrase from './recovery-phrase/review-recovery-phrase';
 import SecureYourWallet from './secure-your-wallet/secure-your-wallet';
 import ConfirmRecoveryPhrase from './recovery-phrase/confirm-recovery-phrase';
 import PrivacySettings from './privacy-settings/privacy-settings';
-import CreationSuccessful from './creation-successful/creation-successful';
-import OnboardingWelcome from './welcome/welcome';
-import ImportSRP from './import-srp/import-srp';
-import OnboardingPinExtension from './pin-extension/pin-extension';
-import MetaMetricsComponent from './metametrics/metametrics';
 
 export default function OnboardingFlow() {
-  const [secretRecoveryPhrase, setSecretRecoveryPhrase] = useState('');
+  const [seedPhrase, setSeedPhrase] = useState('');
   const dispatch = useDispatch();
-  const currentLocation = useLocation();
   const history = useHistory();
-  const t = useI18nContext();
   const isInitialized = useSelector(getIsInitialized);
   const isUnlocked = useSelector(getIsUnlocked);
   const completedOnboarding = useSelector(getCompletedOnboarding);
@@ -55,6 +40,13 @@ export default function OnboardingFlow() {
   const nextRoute = useSelector(getFirstTimeFlowTypeRoute);
 
   useEffect(() => {
+    // For ONBOARDING_V2 dev purposes,
+    // Remove when ONBOARDING_V2 dev complete
+    if (process.env.ONBOARDING_V2) {
+      history.push(ONBOARDING_PRIVACY_SETTINGS_ROUTE);
+      return;
+    }
+
     if (completedOnboarding && seedPhraseBackedUp) {
       history.push(DEFAULT_ROUTE);
       return;
@@ -72,22 +64,18 @@ export default function OnboardingFlow() {
   ]);
 
   const handleCreateNewAccount = async (password) => {
-    const newSecretRecoveryPhrase = await dispatch(
+    const newSeedPhrase = await dispatch(
       createNewVaultAndGetSeedPhrase(password),
     );
-    setSecretRecoveryPhrase(newSecretRecoveryPhrase);
+    setSeedPhrase(newSeedPhrase);
   };
 
   const handleUnlock = async (password) => {
-    const retrievedSecretRecoveryPhrase = await dispatch(
+    const retreivedSeedPhrase = await dispatch(
       unlockAndGetSeedPhrase(password),
     );
-    setSecretRecoveryPhrase(retrievedSecretRecoveryPhrase);
+    setSeedPhrase(retreivedSeedPhrase);
     history.push(nextRoute);
-  };
-
-  const handleImportWithRecoveryPhrase = async (password, srp) => {
-    return await dispatch(createNewVaultAndRestore(password, srp));
   };
 
   return (
@@ -97,11 +85,9 @@ export default function OnboardingFlow() {
           <Route
             path={ONBOARDING_CREATE_PASSWORD_ROUTE}
             render={(routeProps) => (
-              <CreatePassword
+              <NewAccount
                 {...routeProps}
                 createNewAccount={handleCreateNewAccount}
-                importWithRecoveryPhrase={handleImportWithRecoveryPhrase}
-                secretRecoveryPhrase={secretRecoveryPhrase}
               />
             )}
           />
@@ -112,28 +98,11 @@ export default function OnboardingFlow() {
           />
           <Route
             path={ONBOARDING_REVIEW_SRP_ROUTE}
-            render={() => (
-              <ReviewRecoveryPhrase
-                secretRecoveryPhrase={secretRecoveryPhrase}
-              />
-            )}
+            render={() => <ReviewRecoveryPhrase seedPhrase={seedPhrase} />}
           />
           <Route
             path={ONBOARDING_CONFIRM_SRP_ROUTE}
-            render={() => (
-              <ConfirmRecoveryPhrase
-                secretRecoveryPhrase={secretRecoveryPhrase}
-              />
-            )}
-          />
-          <Route
-            path={ONBOARDING_IMPORT_WITH_SRP_ROUTE}
-            render={(routeProps) => (
-              <ImportSRP
-                {...routeProps}
-                submitSecretRecoveryPhrase={setSecretRecoveryPhrase}
-              />
-            )}
+            render={() => <ConfirmRecoveryPhrase seedPhrase={seedPhrase} />}
           />
           <Route
             path={ONBOARDING_UNLOCK_ROUTE}
@@ -145,36 +114,9 @@ export default function OnboardingFlow() {
             path={ONBOARDING_PRIVACY_SETTINGS_ROUTE}
             component={PrivacySettings}
           />
-          <Route
-            path={ONBOARDING_COMPLETION_ROUTE}
-            component={CreationSuccessful}
-          />
-          <Route
-            path={ONBOARDING_WELCOME_ROUTE}
-            component={OnboardingWelcome}
-          />
-          <Route
-            path={ONBOARDING_PIN_EXTENSION_ROUTE}
-            component={OnboardingPinExtension}
-          />
-          <Route
-            path={ONBOARDING_METAMETRICS}
-            component={MetaMetricsComponent}
-          />
           <Route exact path="*" component={OnboardingFlowSwitch} />
         </Switch>
       </div>
-      {currentLocation?.pathname === ONBOARDING_COMPLETION_ROUTE && (
-        <Button
-          className="onboarding-flow__twitter-button"
-          type="link"
-          href="https://twitter.com/MetaMask"
-          target="_blank"
-        >
-          <span>{t('followUsOnTwitter')}</span>
-          <img src="images/twitter-icon.png" />
-        </Button>
-      )}
     </div>
   );
 }

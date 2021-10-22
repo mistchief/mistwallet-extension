@@ -50,20 +50,17 @@ export default class SendContent extends Component {
     return (
       <PageContainerContent>
         <div className="send-v2__form">
-          {gasError ? this.renderError(gasError) : null}
-          {isEthGasPrice
-            ? this.renderWarning(ETH_GAS_PRICE_FETCH_WARNING_KEY)
-            : null}
-          {isAssetSendable === false
-            ? this.renderError(UNSENDABLE_ASSET_ERROR_KEY)
-            : null}
-          {error ? this.renderError(error) : null}
-          {warning ? this.renderWarning() : null}
+          {gasError && this.renderError(gasError)}
+          {isEthGasPrice && this.renderWarning(ETH_GAS_PRICE_FETCH_WARNING_KEY)}
+          {isAssetSendable === false &&
+            this.renderError(UNSENDABLE_ASSET_ERROR_KEY)}
+          {error && this.renderError(error)}
+          {warning && this.renderWarning()}
           {this.maybeRenderAddContact()}
           <SendAssetRow />
           <SendAmountRow />
-          {networkOrAccountNotSupports1559 ? <SendGasRow /> : null}
-          {this.props.showHexData ? <SendHexDataRow /> : null}
+          {networkOrAccountNotSupports1559 && <SendGasRow />}
+          {this.props.showHexData && <SendHexDataRow />}
         </div>
       </PageContainerContent>
     );

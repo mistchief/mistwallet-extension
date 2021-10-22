@@ -7,27 +7,24 @@ import Typography from '../../../components/ui/typography';
 import Copy from '../../../components/ui/icon/copy-icon.component';
 import { useCopyToClipboard } from '../../../hooks/useCopyToClipboard';
 import { useI18nContext } from '../../../hooks/useI18nContext';
-import { ONBOARDING_CONFIRM_SRP_ROUTE } from '../../../helpers/constants/routes';
+import { INITIALIZE_CONFIRM_SEED_PHRASE_ROUTE } from '../../../helpers/constants/routes';
 import {
   TEXT_ALIGN,
   TYPOGRAPHY,
   JUSTIFY_CONTENT,
   FONT_WEIGHT,
 } from '../../../helpers/constants/design-system';
-import {
-  ThreeStepProgressBar,
-  threeStepStages,
-} from '../../../components/app/step-progress-bar';
+import ProgressBar from '../../../components/app/step-progress-bar';
 import RecoveryPhraseChips from './recovery-phrase-chips';
 
-export default function RecoveryPhrase({ secretRecoveryPhrase }) {
+export default function RecoveryPhrase({ seedPhrase }) {
   const history = useHistory();
   const t = useI18nContext();
   const [copied, handleCopy] = useCopyToClipboard();
-  const [phraseRevealed, setPhraseRevealed] = useState(false);
+  const [seedPhraseRevealed, setSeedPhraseRevealed] = useState(false);
   return (
     <div className="recovery-phrase">
-      <ThreeStepProgressBar stage={threeStepStages.RECOVERY_PHRASE_REVIEW} />
+      <ProgressBar stage="SEED_PHRASE_REVIEW" />
       <Box
         justifyContent={JUSTIFY_CONTENT.CENTER}
         textAlign={TEXT_ALIGN.CENTER}
@@ -79,19 +76,18 @@ export default function RecoveryPhrase({ secretRecoveryPhrase }) {
         </ul>
       </Box>
       <RecoveryPhraseChips
-        secretRecoveryPhrase={secretRecoveryPhrase.split(' ')}
-        phraseRevealed={phraseRevealed}
+        seedPhrase={seedPhrase.split(' ')}
+        seedPhraseRevealed={seedPhraseRevealed}
       />
       <div className="recovery-phrase__footer">
-        {phraseRevealed ? (
+        {seedPhraseRevealed ? (
           <div className="recovery-phrase__footer--copy">
             <Button
               onClick={() => {
-                handleCopy(secretRecoveryPhrase);
+                handleCopy(seedPhrase);
               }}
               icon={copied ? null : <Copy size={20} color="#3098DC" />}
               className="recovery-phrase__footer--copy--button"
-              type="link"
             >
               {copied ? t('copiedExclamation') : t('copyToClipboard')}
             </Button>
@@ -99,7 +95,7 @@ export default function RecoveryPhrase({ secretRecoveryPhrase }) {
               type="primary"
               className="recovery-phrase__footer--button"
               onClick={() => {
-                history.push(ONBOARDING_CONFIRM_SRP_ROUTE);
+                history.push(INITIALIZE_CONFIRM_SEED_PHRASE_ROUTE);
               }}
             >
               {t('next')}
@@ -110,7 +106,7 @@ export default function RecoveryPhrase({ secretRecoveryPhrase }) {
             type="primary"
             className="recovery-phrase__footer--button"
             onClick={() => {
-              setPhraseRevealed(true);
+              setSeedPhraseRevealed(true);
             }}
           >
             {t('revealSeedWords')}
@@ -122,5 +118,5 @@ export default function RecoveryPhrase({ secretRecoveryPhrase }) {
 }
 
 RecoveryPhrase.propTypes = {
-  secretRecoveryPhrase: PropTypes.string,
+  seedPhrase: PropTypes.string,
 };

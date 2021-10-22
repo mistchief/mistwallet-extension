@@ -27,7 +27,7 @@
     "message": "Aktivitätsprotokoll"
   },
   "addAcquiredTokens": {
-    "message": "Fügen Sie die Token hinzu, die Sie mittels MetaMask erlangt haben"
+    "message": "Fügen Sie die Token hinzu, die Sie mittels MistWallet erlangt haben"
   },
   "addAlias": {
     "message": "Alias hinzufügen"
@@ -64,7 +64,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -92,7 +92,7 @@
     "message": "Auto-Logout-Timer (Minuten)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Stellen Sie die Ruhezeit in Minuten ein, nach der sich MetaMask automatisch ausloggen soll"
+    "message": "Stellen Sie die Ruhezeit in Minuten ein, nach der sich MistWallet automatisch ausloggen soll"
   },
   "average": {
     "message": "Durchschnitt"
@@ -104,7 +104,7 @@
     "message": "Zurück zur Übersicht"
   },
   "backupApprovalInfo": {
-    "message": "Dieser geheime Code ist zum Wiedererlangen Ihres Wallets erforderlich, falls Sie Ihr Gerät verlieren, Ihr Passwort vergessen, MetaMask neu installieren müssen oder auf einem anderen Gerät auf Ihr Wallet zugreifen möchten."
+    "message": "Dieser geheime Code ist zum Wiedererlangen Ihres Wallets erforderlich, falls Sie Ihr Gerät verlieren, Ihr Passwort vergessen, MistWallet neu installieren müssen oder auf einem anderen Gerät auf Ihr Wallet zugreifen möchten."
   },
   "backupApprovalNotice": {
     "message": "Sichern Sie Ihren geheimen Wiederherstellungscode, um Ihr Wallet und Ihr Geld geschützt zu halten."
@@ -138,7 +138,7 @@
     "message": "ETH mit Wyre kaufen"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ermöglicht Ihnen die Verwendung einer Kreditkarte zum direkten Einzahlen von ETH auf Ihr MetaMask-Konto."
+    "message": "Wyre ermöglicht Ihnen die Verwendung einer Kreditkarte zum direkten Einzahlen von ETH auf Ihr MistWallet-Konto."
   },
   "cancel": {
     "message": "Abbrechen"
@@ -150,7 +150,7 @@
     "message": "Abgebrochen"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Sie müssen MetaMask unter Google Chrome nutzen, um sich mit Ihrem Hardware-Wallet zu verbinden."
+    "message": "Sie müssen MistWallet unter Google Chrome nutzen, um sich mit Ihrem Hardware-Wallet zu verbinden."
   },
   "clickToRevealSeed": {
     "message": "Hier klicken, um Geheimwörter zu enthüllen"
@@ -321,13 +321,13 @@
     "message": "Zeigen Sie diesen Schlüssel niemals einer anderen Person."
   },
   "endOfFlowMessage5": {
-    "message": "Vorsicht vor Phishing! MetaMask fragt Sie niemals spontan nach Ihrer mnemonischen Phrase."
+    "message": "Vorsicht vor Phishing! MistWallet fragt Sie niemals spontan nach Ihrer mnemonischen Phrase."
   },
   "endOfFlowMessage6": {
     "message": "Wenn Sie Ihre mnemonische Phrase erneut sicherstellen müssen, finden Sie sie unter Einstellungen -> Sicherheit."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask kann Ihren Seedschlüssel nicht wiederherstellen. Erfahren Sie mehr."
+    "message": "MistWallet kann Ihren Seedschlüssel nicht wiederherstellen. Erfahren Sie mehr."
   },
   "endOfFlowMessage9": {
     "message": "Mehr hierzu."
@@ -438,7 +438,7 @@
     "message": "Ein Hardware-Wallet verknüpfen"
   },
   "hardwareWalletsMsg": {
-    "message": "Wählen Sie ein Hardware-Wallet aus, das Sie mit MetaMask verwenden möchten"
+    "message": "Wählen Sie ein Hardware-Wallet aus, das Sie mit MistWallet verwenden möchten"
   },
   "here": {
     "message": "hier",
@@ -464,7 +464,7 @@
     "message": "Account importieren"
   },
   "importAccountMsg": {
-    "message": " Importierte Accounts werden nicht mit der Seed-Wörterfolge deines ursprünglichen MetaMask Accounts verknüpft. Erfahre mehr über importierte Accounts."
+    "message": " Importierte Accounts werden nicht mit der Seed-Wörterfolge deines ursprünglichen MistWallet Accounts verknüpft. Erfahre mehr über importierte Accounts."
   },
   "importAccountSeedPhrase": {
     "message": "Ein Konto mit einem Seed-Schlüssel importieren"
@@ -553,10 +553,10 @@
     "message": "Nachricht"
   },
   "metamaskDescription": {
-    "message": "MetaMask ist ein sicherer Identitätssafe für Ethereum."
+    "message": "MistWallet ist ein sicherer Identitätssafe für Ethereum."
   },
   "metamaskVersion": {
-    "message": "MetaMask-Version"
+    "message": "MistWallet-Version"
   },
   "mustSelectOne": {
     "message": "Du musst mindestens 1 Token auswählen."
@@ -565,7 +565,7 @@
     "message": "Meine Accounts"
   },
   "needEtherInWallet": {
-    "message": "Um dezentralisierte Applikationen mit MetaMask verwenden zu können, benötigst du Ether in deiner Wallet."
+    "message": "Um dezentralisierte Applikationen mit MistWallet verwenden zu können, benötigst du Ether in deiner Wallet."
   },
   "needImportFile": {
     "message": "Für den Import musst du eine Datei auswählen.",
@@ -608,8 +608,8 @@
   "newPassword": {
     "message": "Neues Passwort (min. 8 Zeichen)"
   },
-  "newToMetaMask": {
-    "message": "Neu bei MetaMask?"
+  "newToMistWallet": {
+    "message": "Neu bei MistWallet?"
   },
   "newTotal": {
     "message": "Neue Summe"
@@ -663,7 +663,7 @@
     "message": "Bei MetaMetrics teilnehmen"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Nehmen Sie an MetaMetrics teil, um uns bei der Verbesserung von MetaMask zu helfen"
+    "message": "Nehmen Sie an MetaMetrics teil, um uns bei der Verbesserung von MistWallet zu helfen"
   },
   "password": {
     "message": "Passwort"
@@ -768,6 +768,9 @@
   "revealSeedWordsDescription": {
     "message": "Wenn Sie einmal Ihren Browser oder Computer wechseln, benötigen Sie diesen Seed-Schlüssel, um auf Ihre Konten zuzugreifen. Bewahren Sie ihn an einem sicheren und geheimen Ort auf."
   },
+  "revealSeedWordsTitle": {
+    "message": "Mnemonische Phrase"
+  },
   "revealSeedWordsWarning": {
     "message": "Bitte niemals deine Seed-Wörterfolge an einem öffentlichen Ort kenntlich machen. Mit diesen Wörtern können alle deine Accounts gestohlen werden."
   },
@@ -804,6 +807,9 @@
   "searchTokens": {
     "message": "Token suchen"
   },
+  "secretBackupPhrase": {
+    "message": "Geheimer Backup-Schlüssel"
+  },
   "secretBackupPhraseDescription": {
     "message": "Mit Ihrem geheimen Backup-Schlüssel können Sie Ihr Konto ganz einfach sichern und wiederherstellen."
   },
@@ -829,7 +835,7 @@
     "message": "Ein Konto auswählen"
   },
   "selectAnAccountHelp": {
-    "message": "Wählen Sie das Konto aus, das in MetaMask angezeigt werden soll."
+    "message": "Wählen Sie das Konto aus, das in MistWallet angezeigt werden soll."
   },
   "selectEachPhrase": {
     "message": "Bitte wählen Sie jede Phrase aus, um sicherzustellen, dass sie korrekt ist."
@@ -940,16 +946,16 @@
     "message": "Stellen Sie sicher, dass niemand sonst auf Ihren Bildschirm blickt, wenn Sie diesen Code scannen"
   },
   "syncWithMobileComplete": {
-    "message": "Ihre Daten wurden erfolgreich synchronisiert. Viel Spaß mit der MetaMask-Handy-App!"
+    "message": "Ihre Daten wurden erfolgreich synchronisiert. Viel Spaß mit der MistWallet-Handy-App!"
   },
   "syncWithMobileDesc": {
-    "message": "Sie können Ihre Konten und Informationen mit Ihrem Mobilgerät synchronisieren. Öffnen Sie die MetaMask-Mobilapp, gehen Sie zu \"Einstellungen\" und tippen Sie auf \"Von Browsererweiterung aus synchronisieren\""
+    "message": "Sie können Ihre Konten und Informationen mit Ihrem Mobilgerät synchronisieren. Öffnen Sie die MistWallet-Mobilapp, gehen Sie zu \"Einstellungen\" und tippen Sie auf \"Von Browsererweiterung aus synchronisieren\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Wenn Sie die MetaMask-Mobilapp gerade zum ersten Mal öffnen, folgen Sie einfach den Schritten auf Ihrem Telefon."
+    "message": "Wenn Sie die MistWallet-Mobilapp gerade zum ersten Mal öffnen, folgen Sie einfach den Schritten auf Ihrem Telefon."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scannen Sie diesen Code mit Ihrer MetaMask-Mobilapp"
+    "message": "Scannen Sie diesen Code mit Ihrer MistWallet-Mobilapp"
   },
   "syncWithMobileTitle": {
     "message": "Mit Mobilgerät synchronisieren"
@@ -1085,7 +1091,7 @@
     "message": "Gehe zu unserer Webseite"
   },
   "welcome": {
-    "message": "Willkommen zu MetaMask"
+    "message": "Willkommen zu MistWallet"
   },
   "welcomeBack": {
     "message": "Willkommen zurück!"

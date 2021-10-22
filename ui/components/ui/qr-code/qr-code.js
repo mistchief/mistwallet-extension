@@ -3,6 +3,7 @@ import React from 'react';
 import qrCode from 'qrcode-generator';
 import { connect } from 'react-redux';
 import { isHexPrefixed } from 'ethereumjs-util';
+import ReadOnlyInput from '../readonly-input/readonly-input';
 import { toChecksumHexAddress } from '../../../../shared/modules/hexstring-utils';
 
 export default connect(mapStateToProps)(QrCodeView);
@@ -26,10 +27,6 @@ function QrCodeView(props) {
   qrImage.addData(address);
   qrImage.make();
 
-  const header = message ? (
-    <div className="qr-code__header">{message}</div>
-  ) : null;
-
   return (
     <div className="qr-code">
       {Array.isArray(message) ? (
@@ -41,16 +38,20 @@ function QrCodeView(props) {
           ))}
         </div>
       ) : (
-        header
+        message && <div className="qr-code__header">{message}</div>
       )}
-      {warning ? <span className="qr_code__error">{warning}</span> : null}
+      {warning && <span className="qr_code__error">{warning}</span>}
       <div
         className="qr-code__wrapper"
         dangerouslySetInnerHTML={{
           __html: qrImage.createTableTag(4),
         }}
       />
-      <div className="qr-code__address">{toChecksumHexAddress(data)}</div>
+      <ReadOnlyInput
+        wrapperClass="ellip-address-wrapper"
+        autoFocus
+        value={toChecksumHexAddress(data)}
+      />
     </div>
   );
 }

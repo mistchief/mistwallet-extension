@@ -35,11 +35,12 @@ import TransactionDetailItem from '../../components/app/transaction-detail-item/
 import InfoTooltip from '../../components/ui/info-tooltip/info-tooltip';
 import LoadingHeartBeat from '../../components/ui/loading-heartbeat';
 import GasTiming from '../../components/app/gas-timing/gas-timing.component';
-import LedgerInstructionField from '../../components/app/ledger-instruction-field';
+import Dialog from '../../components/ui/dialog';
 
 import {
   COLORS,
   FONT_STYLE,
+  FONT_WEIGHT,
   TYPOGRAPHY,
 } from '../../helpers/constants/design-system';
 import {
@@ -50,7 +51,6 @@ import {
 } from '../../store/actions';
 
 import Typography from '../../components/ui/typography/typography';
-import { MIN_GAS_LIMIT_DEC } from '../send/send.constants';
 
 const renderHeartBeatIfNotInTest = () =>
   process.env.IN_TEST === 'true' ? null : <LoadingHeartBeat />;
@@ -126,9 +126,9 @@ export default class ConfirmTransactionBase extends Component {
     isMainnet: PropTypes.bool,
     gasFeeIsCustom: PropTypes.bool,
     showLedgerSteps: PropTypes.bool.isRequired,
+    isFirefox: PropTypes.bool.isRequired,
     nativeCurrency: PropTypes.string,
     supportsEIP1559: PropTypes.bool,
-    hardwareWalletRequiresConnection: PropTypes.bool,
   };
 
   state = {
@@ -232,7 +232,7 @@ export default class ConfirmTransactionBase extends Component {
       };
     }
 
-    if (hexToDecimal(customGas.gasLimit) < Number(MIN_GAS_LIMIT_DEC)) {
+    if (hexToDecimal(customGas.gasLimit) < 21000) {
       return {
         valid: false,
         errorKey: GAS_LIMIT_TOO_LOW_ERROR_KEY,
@@ -309,6 +309,7 @@ export default class ConfirmTransactionBase extends Component {
       maxPriorityFeePerGas,
       isMainnet,
       showLedgerSteps,
+      isFirefox,
       supportsEIP1559,
     } = this.props;
     const { t } = this.context;
@@ -399,6 +400,46 @@ export default class ConfirmTransactionBase extends Component {
               value={customNonceValue || ''}
             />
           </div>
+        </div>
+      </div>
+    ) : null;
+
+    const renderLedgerLiveStep = (text, show = true) => {
+      return (
+        show && (
+          <Typography
+            boxProps={{ margin: 0 }}
+            color={COLORS.PRIMARY3}
+            fontWeight={FONT_WEIGHT.BOLD}
+            variant={TYPOGRAPHY.H7}
+          >
+            {text}
+          </Typography>
+        )
+      );
+    };
+
+    const ledgerInstructionField = showLedgerSteps ? (
+      <div>
+        <div className="confirm-detail-row">
+          <Dialog type="message">
+            <div className="ledger-live-dialog">
+              {renderLedgerLiveStep(t('ledgerLiveDialogHeader'))}
+              {renderLedgerLiveStep(
+                `- ${t('ledgerLiveDialogStepOne')}`,
+                !isFirefox,
+              )}
+              {renderLedgerLiveStep(
+                `- ${t('ledgerLiveDialogStepTwo')}`,
+                !isFirefox,
+              )}
+              {renderLedgerLiveStep(`- ${t('ledgerLiveDialogStepThree')}`)}
+              {renderLedgerLiveStep(
+                `- ${t('ledgerLiveDialogStepFour')}`,
+                Boolean(txData.txParams?.data),
+              )}
+            </div>
+          </Dialog>
         </div>
       </div>
     ) : null;
@@ -532,11 +573,7 @@ export default class ConfirmTransactionBase extends Component {
           ]}
         />
         {nonceField}
-        {showLedgerSteps ? (
-          <LedgerInstructionField
-            showDataInstruction={Boolean(txData.txParams?.data)}
-          />
-        ) : null}
+        {ledgerInstructionField}
       </div>
     );
   }
@@ -878,7 +915,6 @@ export default class ConfirmTransactionBase extends Component {
       gasIsLoading,
       gasFeeIsCustom,
       nativeCurrency,
-      hardwareWalletRequiresConnection,
     } = this.props;
     const {
       submitting,
@@ -944,12 +980,7 @@ export default class ConfirmTransactionBase extends Component {
         lastTx={lastTx}
         ofText={ofText}
         requestsWaitingText={requestsWaitingText}
-        disabled={
-          !valid ||
-          submitting ||
-          hardwareWalletRequiresConnection ||
-          (gasIsLoading && !gasFeeIsCustom)
-        }
+        disabled={!valid || submitting || (gasIsLoading && !gasFeeIsCustom)}
         onEdit={() => this.handleEdit()}
         onCancelAll={() => this.handleCancelAll()}
         onCancel={() => this.handleCancel()}

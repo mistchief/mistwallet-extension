@@ -272,7 +272,7 @@ export default function AwaitingSwap({
         <div className="awaiting-swap__main-descrption">{descriptionText}</div>
         {content}
       </div>
-      {!errorKey && swapComplete ? <MakeAnotherSwap /> : null}
+      {!errorKey && swapComplete && <MakeAnotherSwap />}
       <SwapsFooter
         onSubmit={async () => {
           if (errorKey === OFFLINE_FOR_MAINTENANCE) {

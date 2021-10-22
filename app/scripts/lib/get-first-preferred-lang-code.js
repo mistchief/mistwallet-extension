@@ -38,23 +38,9 @@ export default async function getFirstPreferredLangCode() {
     userPreferredLocaleCodes = [];
   }
 
-  let firstPreferredLangCode = userPreferredLocaleCodes
+  const firstPreferredLangCode = userPreferredLocaleCodes
     .map((code) => code.toLowerCase().replace('_', '-'))
-    .find(
-      (code) =>
-        existingLocaleCodes[code] !== undefined ||
-        existingLocaleCodes[code.split('-')[0]] !== undefined,
-    );
-
-  // if we have matched against a code with a '-' present, meaning its a regional
-  // code for which we have a non-regioned locale, we need to set firstPreferredLangCode
-  // to the correct non-regional code.
-  if (
-    firstPreferredLangCode !== undefined &&
-    existingLocaleCodes[firstPreferredLangCode] === undefined
-  ) {
-    firstPreferredLangCode = firstPreferredLangCode.split('-')[0];
-  }
+    .find((code) => existingLocaleCodes[code] !== undefined);
 
   return existingLocaleCodes[firstPreferredLangCode] || 'en';
 }

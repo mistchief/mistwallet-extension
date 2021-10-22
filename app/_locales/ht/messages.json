@@ -21,7 +21,7 @@
     "message": "aktivite ki fèt"
   },
   "addAcquiredTokens": {
-    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk MetaMask"
+    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk MistWallet"
   },
   "addSuggestedTokens": {
     "message": "Ajoute Token Yo Sikjere W"
@@ -37,7 +37,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -77,7 +77,7 @@
     "message": "Anilasyon Gaz Chaj"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ou bezwen sèvi ak MetaMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
+    "message": "Ou bezwen sèvi ak MistWallet sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
   },
   "close": {
     "message": "Fèmen"
@@ -242,7 +242,7 @@
     "message": "Materyèl Wallet konekte"
   },
   "hardwareWalletsMsg": {
-    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak MetaMask"
+    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak MistWallet"
   },
   "here": {
     "message": "isit la",
@@ -265,7 +265,7 @@
     "message": "Pòte Kont"
   },
   "importAccountMsg": {
-    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont MetaMask seed fraz. Aprann plis sou kont enpòte "
+    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont MistWallet seed fraz. Aprann plis sou kont enpòte "
   },
   "imported": {
     "message": "Pòte",
@@ -333,10 +333,10 @@
     "message": "Mesaje"
   },
   "metamaskDescription": {
-    "message": "MetaMask sekirize idantite pou Ethereum."
+    "message": "MistWallet sekirize idantite pou Ethereum."
   },
   "metamaskVersion": {
-    "message": "MetaMask Vèsyon"
+    "message": "MistWallet Vèsyon"
   },
   "mustSelectOne": {
     "message": "Ou dwe chwazi omwen 1 token."
@@ -345,7 +345,7 @@
     "message": "Kont mwen"
   },
   "needEtherInWallet": {
-    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize MetaMask, ou pral bezwen Ether nan Wallet ou."
+    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize MistWallet, ou pral bezwen Ether nan Wallet ou."
   },
   "needImportFile": {
     "message": "Ou dwe chwazi yon dosye pou enpòte.",
@@ -492,6 +492,9 @@
   "revealSeedWordsDescription": {
     "message": "Si ou pa janm chanje navigatè ou deplase òdinatè, ou pral bezwen fraz seed la pou ka gen aksè a kont ou. Sere yo on kote an sekirite e an sekrè."
   },
+  "revealSeedWordsTitle": {
+    "message": "Seed Fraz"
+  },
   "revealSeedWordsWarning": {
     "message": "Yo ka itilize mo sa pou vòlè kont ou."
   },
@@ -532,7 +535,7 @@
     "message": "Chwazi yon kont"
   },
   "selectAnAccountHelp": {
-    "message": "Chwazi kont pou wè nan MetaMask"
+    "message": "Chwazi kont pou wè nan MistWallet"
   },
   "selectHdPath": {
     "message": "Chwazi chemen HD"
@@ -688,8 +691,11 @@
   "visitWebSite": {
     "message": "Vizite sit entènèt nou an"
   },
+  "walletSeed": {
+    "message": "Bous Seed"
+  },
   "welcome": {
-    "message": "Byenveni nan MetaMask"
+    "message": "Byenveni nan MistWallet"
   },
   "welcomeBack": {
     "message": "Bon Retou!"

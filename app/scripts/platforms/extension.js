@@ -79,43 +79,10 @@ export default class ExtensionPlatform {
   }
 
   getVersion() {
-    const {
-      version,
-      version_name: versionName,
-    } = extension.runtime.getManifest();
-
-    const versionParts = version.split('.');
-    if (versionName) {
-      // On Chrome, the build type is stored as `version_name` in the manifest, and the fourth part
-      // of the version is the build version.
-      const buildType = versionName;
-      if (versionParts.length < 4) {
-        throw new Error(`Version missing build number: '${version}'`);
-      }
-      const [major, minor, patch, buildVersion] = versionParts;
-
-      return `${major}.${minor}.${patch}-${buildType}.${buildVersion}`;
-    } else if (versionParts.length === 4) {
-      // On Firefox, the build type and build version are in the fourth part of the version.
-      const [major, minor, patch, prerelease] = versionParts;
-      const matches = prerelease.match(/^(\w+)(\d)+$/u);
-      if (matches === null) {
-        throw new Error(`Version contains invalid prerelease: ${version}`);
-      }
-      const [, buildType, buildVersion] = matches;
-      return `${major}.${minor}.${patch}-${buildType}.${buildVersion}`;
-    }
-
-    // If there is no `version_name` and there are only 3 version parts, then this is not a
-    // prerelease and the version requires no modification.
-    return version;
+    return extension.runtime.getManifest().version;
   }
 
-  openExtensionInBrowser(
-    route = null,
-    queryString = null,
-    keepWindowOpen = false,
-  ) {
+  openExtensionInBrowser(route = null, queryString = null) {
     let extensionURL = extension.runtime.getURL('home.html');
 
     if (queryString) {
@@ -126,10 +93,7 @@ export default class ExtensionPlatform {
       extensionURL += `#${route}`;
     }
     this.openTab({ url: extensionURL });
-    if (
-      getEnvironmentType() !== ENVIRONMENT_TYPE_BACKGROUND &&
-      !keepWindowOpen
-    ) {
+    if (getEnvironmentType() !== ENVIRONMENT_TYPE_BACKGROUND) {
       window.close();
     }
   }

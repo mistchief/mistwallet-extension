@@ -136,9 +136,7 @@ export default class ContactListTab extends Component {
       <div className="address-book-wrapper">
         {this.renderAddressBookContent()}
         {this.renderContactContent()}
-        {!addingContact && addressBook.length > 0
-          ? this.renderAddButton()
-          : null}
+        {!addingContact && addressBook.length > 0 && this.renderAddButton()}
       </div>
     );
   }

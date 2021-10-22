@@ -44,7 +44,7 @@
     "message": "activity log"
   },
   "addAcquiredTokens": {
-    "message": "Add the tokens you've acquired using MetaMask"
+    "message": "Add the tokens you've acquired using MistWallet"
   },
   "addAlias": {
     "message": "Add alias"
@@ -60,10 +60,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "This will allow this network to be used within MetaMask."
+    "message": "This will allow this network to be used within MistWallet."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask does not verify custom networks."
+    "message": "MistWallet does not verify custom networks."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Learn about $1.",
@@ -161,7 +161,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -211,7 +211,7 @@
     "message": "Auto-Lock Timer (minutes)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Set the idle time in minutes before MetaMask will become locked."
+    "message": "Set the idle time in minutes before MistWallet will become locked."
   },
   "average": {
     "message": "Average"
@@ -223,7 +223,7 @@
     "message": "Back to All"
   },
   "backupApprovalInfo": {
-    "message": "This secret code is required to recover your wallet in case you lose your device, forget your password, have to re-install MetaMask, or want to access your wallet on another device."
+    "message": "This secret code is required to recover your wallet in case you lose your device, forget your password, have to re-install MistWallet, or want to access your wallet on another device."
   },
   "backupApprovalNotice": {
     "message": "Backup your Secret Recovery Phrase to keep your wallet and funds secure."
@@ -241,10 +241,10 @@
     "message": "Basic"
   },
   "betaMetamaskDescription": {
-    "message": "Trusted by millions, MetaMask is a secure wallet making the world of web3 accessible to all."
+    "message": "Trusted by millions, MistWallet is a secure wallet making the world of web3 accessible to all."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Use this version to test upcoming features before they’re released. Your use and feedback helps us build the best version of MetaMask possible. Your use of MetaMask Beta is subject to our standard $1 as well as our $2. As a Beta, there may be an increased risk of bugs. By proceeding, you accept and acknowledge these risks, as well as those risks found in our Terms and Beta Terms.",
+    "message": "Use this version to test upcoming features before they’re released. Your use and feedback helps us build the best version of MistWallet possible. Your use of MistWallet Beta is subject to our standard $1 as well as our $2. As a Beta, there may be an increased risk of bugs. By proceeding, you accept and acknowledge these risks, as well as those risks found in our Terms and Beta Terms.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -254,10 +254,10 @@
     "message": "Terms"
   },
   "betaMetamaskVersion": {
-    "message": "MetaMask Beta Version"
+    "message": "MistWallet Beta Version"
   },
   "betaWelcome": {
-    "message": "Welcome to MetaMask Beta"
+    "message": "Welcome to MistWallet Beta"
   },
   "blockExplorerAccountAction": {
     "message": "Account",
@@ -295,7 +295,7 @@
     "message": "Build your contact list"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask is designed and built around the world."
+    "message": "MistWallet is designed and built around the world."
   },
   "buy": {
     "message": "Buy"
@@ -304,13 +304,13 @@
     "message": "Buy ETH with Transak"
   },
   "buyWithTransakDescription": {
-    "message": "Transak supports debit card and bank transfers (depending on location) in 59+ countries. ETH deposits into your MetaMask account."
+    "message": "Transak supports debit card and bank transfers (depending on location) in 59+ countries. ETH deposits into your MistWallet account."
   },
   "buyWithWyre": {
     "message": "Buy ETH with Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit ETH right in to your MetaMask account."
+    "message": "Wyre lets you use a debit card to deposit ETH right in to your MistWallet account."
   },
   "bytes": {
     "message": "Bytes"
@@ -343,11 +343,7 @@
     "message": "This Chain ID is currently used by the $1 network."
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "You need to use MetaMask on Google Chrome in order to connect to your Hardware Wallet."
-  },
-  "clickToConnectLedgerViaWebHID": {
-    "message": "Click here to connect your Ledger via WebHID",
-    "description": "Text that can be clicked to open a browser popup for connecting the ledger device via webhid"
+    "message": "You need to use MistWallet on Google Chrome in order to connect to your Hardware Wallet."
   },
   "clickToRevealSeed": {
     "message": "Click here to reveal secret words"
@@ -361,11 +357,11 @@
   "confirmPassword": {
     "message": "Confirm password"
   },
-  "confirmRecoveryPhrase": {
-    "message": "Confirm Secret Recovery Phrase"
-  },
   "confirmSecretBackupPhrase": {
     "message": "Confirm your Secret Recovery Phrase"
+  },
+  "confirmSeedPhrase": {
+    "message": "Confirm Secret Recovery Phrase"
   },
   "confirmed": {
     "message": "Confirmed"
@@ -414,8 +410,8 @@
     "message": "$1 accounts",
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
-  "connectWithMetaMask": {
-    "message": "Connect With MetaMask"
+  "connectWithMistWallet": {
+    "message": "Connect With MistWallet"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "You have $1 accounts connected to this site.",
@@ -425,7 +421,7 @@
     "message": "You have 1 account connected to this site."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask is not connected to this site. To connect to a web3 site, find and click the connect button."
+    "message": "MistWallet is not connected to this site. To connect to a web3 site, find and click the connect button."
   },
   "connectedSites": {
     "message": "Connected sites"
@@ -562,7 +558,7 @@
     "message": "Data"
   },
   "dataBackupFoundInfo": {
-    "message": "Some of your account data was backed up during a previous installation of MetaMask. This could include your settings, contacts, and tokens. Would you like to restore this data now?"
+    "message": "Some of your account data was backed up during a previous installation of MistWallet. This could include your settings, contacts, and tokens. Would you like to restore this data now?"
   },
   "decimal": {
     "message": "Token Decimal"
@@ -794,7 +790,7 @@
     "message": "Never share the phrase with anyone."
   },
   "endOfFlowMessage5": {
-    "message": "Be careful of phishing! MetaMask will never spontaneously ask for your Secret Recovery Phrase."
+    "message": "Be careful of phishing! MistWallet will never spontaneously ask for your Secret Recovery Phrase."
   },
   "endOfFlowMessage6": {
     "message": "If you need to back up your Secret Recovery Phrase again, you can find it in Settings -> Security."
@@ -804,7 +800,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask cannot recover your Secret Recovery Phrase."
+    "message": "MistWallet cannot recover your Secret Recovery Phrase."
   },
   "endOfFlowMessage9": {
     "message": "Learn more."
@@ -865,7 +861,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask encountered an error",
+    "message": "MistWallet encountered an error",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -938,9 +934,6 @@
   "fileImportFail": {
     "message": "File import not working? Click here!",
     "description": "Helps user import their account from a JSON file"
-  },
-  "followUsOnTwitter": {
-    "message": "Follow us on Twitter"
   },
   "forbiddenIpfsGateway": {
     "message": "Forbidden IPFS Gateway: Please specify a CID gateway"
@@ -1075,7 +1068,7 @@
     "message": "Connect a hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "Select a hardware wallet you'd like to use with MetaMask."
+    "message": "Select a hardware wallet you'd like to use with MistWallet."
   },
   "here": {
     "message": "here",
@@ -1114,7 +1107,7 @@
     "message": "import using Secret Recovery Phrase"
   },
   "importAccountMsg": {
-    "message": " Imported accounts will not be associated with your originally created MetaMask account Secret Recovery Phrase. Learn more about imported accounts "
+    "message": " Imported accounts will not be associated with your originally created MistWallet account Secret Recovery Phrase. Learn more about imported accounts "
   },
   "importAccountSeedPhrase": {
     "message": "Import a wallet with Secret Recovery Phrase"
@@ -1122,16 +1115,6 @@
   "importAccountText": {
     "message": "or $1",
     "description": "$1 represents the text from `importAccountLinkText` as a link"
-  },
-  "importExistingWalletDescription": {
-    "message": "Enter your Secret Recovery Phrase (aka Seed Phrase) that you were given when you created your wallet. $1",
-    "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
-  },
-  "importExistingWalletTitle": {
-    "message": "Import existing wallet with Secret Recovery Phrase"
-  },
-  "importMyWallet": {
-    "message": "Import My Wallet"
   },
   "importTokenQuestion": {
     "message": "Import token?"
@@ -1156,7 +1139,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask is unable to connect to the blockchain host. Review possible reasons $1.",
+    "message": "MistWallet is unable to connect to the blockchain host. Review possible reasons $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1255,41 +1238,35 @@
   "ledgerAccountRestriction": {
     "message": "You need to make use your last account before you can add a new one."
   },
-  "ledgerConnectionInstructionHeader": {
-    "message": "Prior to clicking confirm:"
+  "ledgerLiveAdvancedSetting": {
+    "message": "Use Ledger Live"
   },
-  "ledgerConnectionInstructionStepFour": {
-    "message": "Enable \"smart contract data\" or \"blind signing\" on your Ledger device"
-  },
-  "ledgerConnectionInstructionStepOne": {
-    "message": "Enable Use Ledger Live under Settings > Advanced"
-  },
-  "ledgerConnectionInstructionStepThree": {
-    "message": "Plug in your Ledger device and select the Ethereum app"
-  },
-  "ledgerConnectionInstructionStepTwo": {
-    "message": "Open and unlock Ledger Live App"
-  },
-  "ledgerConnectionPreferenceDescription": {
-    "message": "Customize how you connect your Ledger to MetaMask. $1 is recommended, but other options are available. Read more here: $2",
-    "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
-  },
-  "ledgerLive": {
-    "message": "Ledger Live",
-    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to MetaMask."
+  "ledgerLiveAdvancedSettingDescription": {
+    "message": "The new Ledger Live bridge allows you to more easily use your Ledger.  Only available in Chrome."
   },
   "ledgerLiveApp": {
     "message": "Ledger Live App"
+  },
+  "ledgerLiveDialogHeader": {
+    "message": "Prior to clicking confirm:"
+  },
+  "ledgerLiveDialogStepFour": {
+    "message": "Enable \"smart contract data\" or \"blind signing\" on your Ledger device"
+  },
+  "ledgerLiveDialogStepOne": {
+    "message": "Enable Use Ledger Live under Settings > Advanced"
+  },
+  "ledgerLiveDialogStepThree": {
+    "message": "Plug in your Ledger device and select the Ethereum app"
+  },
+  "ledgerLiveDialogStepTwo": {
+    "message": "Open and unlock Ledger Live App"
   },
   "ledgerLocked": {
     "message": "Cannot connect to Ledger device. Please make sure your device is unlocked and Ethereum app is opened."
   },
   "ledgerTimeout": {
     "message": "Ledger Live is taking too long to respond or connection timeout. Make sure Ledger Live app is opened and your device is unlocked."
-  },
-  "ledgerWebHIDNotConnectedErrorMessage": {
-    "message": "The ledger device was not connected. If you wish to connect your Ledger, please click 'Continue' again and approve HID connection",
-    "description": "An error message shown to the user during the hardware connect flow."
   },
   "letsGoSetUp": {
     "message": "Yes, let’s get set up!"
@@ -1347,7 +1324,7 @@
     "message": "Message"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "You now have more control over your account connections in MetaMask."
+    "message": "You now have more control over your account connections in MistWallet."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Click it to manage your connected accounts."
@@ -1359,26 +1336,20 @@
     "message": "Connecting you to Ethereum and the Decentralized Web."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swaps is undergoing maintenance. Please check back later."
+    "message": "MistWallet Swaps is undergoing maintenance. Please check back later."
   },
   "metamaskVersion": {
-    "message": "MetaMask Version"
+    "message": "MistWallet Version"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Always allow you to opt-out via Settings"
-  },
-  "metametricsCommitmentsAllowOptOut2": {
-    "message": "Always be able to opt-out via Settings"
   },
   "metametricsCommitmentsBoldNever": {
     "message": "Never",
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask will.."
-  },
-  "metametricsCommitmentsNeverCollect": {
-    "message": "Never collect keys, addresses, transactions, balances, hashes, or any personal information"
+    "message": "MistWallet will.."
   },
   "metametricsCommitmentsNeverCollectIP": {
     "message": "$1 collect your full IP address",
@@ -1388,12 +1359,6 @@
     "message": "$1 collect keys, addresses, transactions, balances, hashes, or any personal information",
     "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
   },
-  "metametricsCommitmentsNeverIP": {
-    "message": "Never collect your full IP address"
-  },
-  "metametricsCommitmentsNeverSell": {
-    "message": "Never sell data for profit. Ever!"
-  },
   "metametricsCommitmentsNeverSellDataForProfit": {
     "message": "$1 sell data for profit. Ever!",
     "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
@@ -1401,17 +1366,11 @@
   "metametricsCommitmentsSendAnonymizedEvents": {
     "message": "Send anonymized click & pageview events"
   },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Help us improve MetaMask"
+  "metametricsHelpImproveMistWallet": {
+    "message": "Help Us Improve MistWallet"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask would like to gather usage data to better understand how our users interact with the extension. This data will be used to continually improve the usability and user experience of our product and the Ethereum ecosystem."
-  },
-  "metametricsOptInDescription2": {
-    "message": "We would like to gather basic usage data to improve the usability of our product.  These metrics will..."
-  },
-  "metametricsTitle": {
-    "message": "Join 6M+ users to improve MetaMask"
+    "message": "MistWallet would like to gather usage data to better understand how our users interact with the extension. This data will be used to continually improve the usability and user experience of our product and the Ethereum ecosystem."
   },
   "mismatchedChain": {
     "message": "The network details for this chain ID do not match our records. We recommend that you $1 before proceeding.",
@@ -1425,7 +1384,7 @@
     "message": "Don't see your token?"
   },
   "mobileSyncWarning": {
-    "message": "The 'Sync with extension' feature is temporarily disabled. If you want to use your extension wallet on MetaMask mobile, then on your mobile app: go back to the wallet setup options and select the 'Import with Secret Recovery Phrase' option. Use your extension wallet's secret phrase to then import your wallet into mobile."
+    "message": "The 'Sync with extension' feature is temporarily disabled. If you want to use your extension wallet on MistWallet mobile, then on your mobile app: go back to the wallet setup options and select the 'Import with Secret Recovery Phrase' option. Use your extension wallet's secret phrase to then import your wallet into mobile."
   },
   "mustSelectOne": {
     "message": "Must select at least 1 token."
@@ -1437,7 +1396,7 @@
     "message": "Name"
   },
   "needEtherInWallet": {
-    "message": "To interact with decentralized applications using MetaMask, you’ll need Ether in your wallet."
+    "message": "To interact with decentralized applications using MistWallet, you’ll need Ether in your wallet."
   },
   "needHelp": {
     "message": "Need help? Contact $1",
@@ -1447,7 +1406,7 @@
     "message": "Share your Feedback"
   },
   "needHelpLinkText": {
-    "message": "MetaMask Support"
+    "message": "MistWallet Support"
   },
   "needHelpSubmitTicket": {
     "message": "Submit a Ticket"
@@ -1523,8 +1482,8 @@
   "newPassword": {
     "message": "New password (min 8 chars)"
   },
-  "newToMetaMask": {
-    "message": "New to MetaMask?"
+  "newToMistWallet": {
+    "message": "New to MistWallet?"
   },
   "newTotal": {
     "message": "New Total"
@@ -1537,7 +1496,7 @@
   },
   "nextNonceWarning": {
     "message": "Nonce is higher than suggested nonce of $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to MistWallet's internal logic"
   },
   "noAccountsFound": {
     "message": "No accounts found for the given search query"
@@ -1582,19 +1541,19 @@
     "message": "Not Enough Gas"
   },
   "notifications1Description": {
-    "message": "MetaMask Mobile users can now swap tokens inside their mobile wallet. Scan the QR code to get the mobile app and start swapping.",
+    "message": "MistWallet Mobile users can now swap tokens inside their mobile wallet. Scan the QR code to get the mobile app and start swapping.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
     "message": "Swapping on mobile is here!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MistWallet Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "Read more",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Stay up to date on MetaMask security best practices and get the latest security tips from official MetaMask support.",
+    "message": "Stay up to date on MistWallet security best practices and get the latest security tips from official MistWallet support.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1606,7 +1565,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Get the best prices on token swaps right inside your wallet. MetaMask now connects you to multiple decentralized exchange aggregators and professional market makers on Binance Smart Chain.",
+    "message": "Get the best prices on token swaps right inside your wallet. MistWallet now connects you to multiple decentralized exchange aggregators and professional market makers on Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -1618,11 +1577,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "As of Chrome version 91, the API that enabled our Ledger support (U2F) no longer supports hardware wallets. MetaMask has implemented a new Ledger Live support that allows you to continue to connect to your Ledger device via the Ledger Live desktop app.",
+    "message": "As of Chrome version 91, the API that enabled our Ledger support (U2F) no longer supports hardware wallets. MistWallet has implemented a new Ledger Live support that allows you to continue to connect to your Ledger device via the Ledger Live desktop app.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "When interacting with your Ledger account in MetaMask, a new tab will open and you will be asked to open the Ledger Live app.  Once the app opens, you'll be asked to allow a WebSocket connection to your MetaMask account.  That's all!",
+    "message": "When interacting with your Ledger account in MistWallet, a new tab will open and you will be asked to open the Ledger Live app.  Once the app opens, you'll be asked to allow a WebSocket connection to your MistWallet account.  That's all!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1634,7 +1593,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0 included new support for EIP-1559 transactions when using Ledger devices.",
+    "message": "MistWallet v10.1.0 included new support for EIP-1559 transactions when using Ledger devices.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -1660,48 +1619,6 @@
   "on": {
     "message": "On"
   },
-  "onboardingCreateWallet": {
-    "message": "Create a new wallet"
-  },
-  "onboardingImportWallet": {
-    "message": "Import an existing wallet"
-  },
-  "onboardingPinExtensionBillboardAccess": {
-    "message": "Full Access"
-  },
-  "onboardingPinExtensionBillboardDescription": {
-    "message": "These extensions can see and change information"
-  },
-  "onboardingPinExtensionBillboardDescription2": {
-    "message": "on this site."
-  },
-  "onboardingPinExtensionBillboardTitle": {
-    "message": "Extensions"
-  },
-  "onboardingPinExtensionChrome": {
-    "message": "Click the browser extension icon"
-  },
-  "onboardingPinExtensionDescription": {
-    "message": "Pin MetaMask on your browser so it's accessible and easy to view transaction confirmations."
-  },
-  "onboardingPinExtensionDescription2": {
-    "message": "You can open MetaMask by clicking on the extension and access your wallet with 1 click."
-  },
-  "onboardingPinExtensionDescription3": {
-    "message": "Click browser extension icon to access it instantly"
-  },
-  "onboardingPinExtensionLabel": {
-    "message": "Pin MetaMask"
-  },
-  "onboardingPinExtensionStep1": {
-    "message": "1"
-  },
-  "onboardingPinExtensionStep2": {
-    "message": "2"
-  },
-  "onboardingPinExtensionTitle": {
-    "message": "Your MetaMask install is complete!"
-  },
   "onboardingReturnNotice": {
     "message": "\"$1\" will close this tab and direct back to $2",
     "description": "Return the user to the site that initiated onboarding"
@@ -1719,10 +1636,6 @@
   },
   "onlyConnectTrust": {
     "message": "Only connect with sites you trust."
-  },
-  "openFullScreenForLedgerWebHid": {
-    "message": "Open MetaMask in full screen to connect your ledger via WebHID.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "Optional"
@@ -1746,7 +1659,7 @@
     "message": "Participate in MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participate in MetaMetrics to help us make MetaMask better"
+    "message": "Participate in MetaMetrics to help us make MistWallet better"
   },
   "password": {
     "message": "Password"
@@ -1755,10 +1668,10 @@
     "message": "Password not long enough"
   },
   "passwordSetupDetails": {
-    "message": "This password will unlock your MetaMask wallet only on this device. MetaMask can not recover this password."
+    "message": "This password will unlock your MistWallet wallet only on this device. MistWallet can not recover this password."
   },
   "passwordTermsWarning": {
-    "message": "I understand that MetaMask cannot recover this password for me. $1"
+    "message": "I understand that MistWallet cannot recover this password for me. $1"
   },
   "passwordsDontMatch": {
     "message": "Passwords Don't Match"
@@ -1785,10 +1698,6 @@
   "plusXMore": {
     "message": "+ $1 more",
     "description": "$1 is a number of additional but unshown items in a list- this message will be shown in place of those items"
-  },
-  "preferredLedgerConnectionType": {
-    "message": "Preferred Ledger Connection Type",
-    "description": "A header for a dropdown in the advanced section of settings. Appears above the ledgerConnectionPreferenceDescription message"
   },
   "prev": {
     "message": "Prev"
@@ -1858,7 +1767,7 @@
     "message": "Never share your Secret Recovery Phrase with anyone"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "The MetaMask team will never ask for your Secret Recovery Phrase"
+    "message": "The MistWallet team will never ask for your Secret Recovery Phrase"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Your Secret Recovery Phrase controls all of your accounts."
@@ -1883,9 +1792,6 @@
   },
   "rejected": {
     "message": "Rejected"
-  },
-  "remember": {
-    "message": "Remember:"
   },
   "remindMeLater": {
     "message": "Remind me later"
@@ -1936,6 +1842,9 @@
   "revealSeedWordsDescription": {
     "message": "If you ever change browsers or move computers, you will need this Secret Recovery Phrase to access your accounts. Save them somewhere safe and secret."
   },
+  "revealSeedWordsTitle": {
+    "message": "Secret Recovery Phrase"
+  },
   "revealSeedWordsWarning": {
     "message": "These words can be used to steal all your accounts."
   },
@@ -1978,6 +1887,9 @@
   "searchTokens": {
     "message": "Search Tokens"
   },
+  "secretBackupPhrase": {
+    "message": "Secret Recovery Phrase"
+  },
   "secretBackupPhraseDescription": {
     "message": "Your Secret Recovery Phrase makes it easy to back up and restore your account."
   },
@@ -1986,12 +1898,6 @@
   },
   "secretPhrase": {
     "message": "Only the first account on this wallet will auto load. After completing this process, to add additional accounts, click the drop down menu, then select Create Account."
-  },
-  "secretPhraseWarning": {
-    "message": "If you restore using another Secret Recovery Phrase, your current wallet, accounts and assets will be removed from this app permanently. This action cannot be undone."
-  },
-  "secretRecoveryPhrase": {
-    "message": "Secret Recovery Phrase"
   },
   "secureWallet": {
     "message": "Secure Wallet"
@@ -2033,7 +1939,7 @@
     "message": "If someone asks for your recovery phrase they are likely trying to scam you and steal your wallet funds"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Never, ever share your Secret Recovery Phrase, not even with MetaMask!"
+    "message": "Never, ever share your Secret Recovery Phrase, not even with MistWallet!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "What is a Secret Recovery Phrase?"
@@ -2078,10 +1984,10 @@
     "message": "Select an Account"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "This account has already been connected to MetaMask"
+    "message": "This account has already been connected to MistWallet"
   },
   "selectAnAccountHelp": {
-    "message": "Select an account to view in MetaMask."
+    "message": "Select an account to view in MistWallet."
   },
   "selectAnAccountHelpDirections": {
     "message": "Don't see your account? $1",
@@ -2129,7 +2035,7 @@
     "message": "Set advanced privacy settings"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask uses these trusted third-party services to enhance product usability and safety."
+    "message": "MistWallet uses these trusted third-party services to enhance product usability and safety."
   },
   "settings": {
     "message": "Settings"
@@ -2247,7 +2153,7 @@
     "message": "Error in retrieving state logs."
   },
   "stateLogFileName": {
-    "message": "MetaMask State Logs"
+    "message": "MistWallet State Logs"
   },
   "stateLogs": {
     "message": "State Logs"
@@ -2353,7 +2259,7 @@
     "message": "Edit limit"
   },
   "swapEnableDescription": {
-    "message": "This is required and gives MetaMask permission to swap your $1.",
+    "message": "This is required and gives MistWallet permission to swap your $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEstimatedNetworkFee": {
@@ -2402,7 +2308,7 @@
     "message": "Gas fees on the previous screen are split between these two transactions."
   },
   "swapGasFeesSummary": {
-    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. MetaMask does not profit from gas fees.",
+    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. MistWallet does not profit from gas fees.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
@@ -2421,10 +2327,10 @@
   "swapMaxSlippage": {
     "message": "Max slippage"
   },
-  "swapMetaMaskFee": {
-    "message": "MetaMask fee"
+  "swapMistWalletFee": {
+    "message": "MistWallet fee"
   },
-  "swapMetaMaskFeeDescription": {
+  "swapMistWalletFeeDescription": {
     "message": "We find the best price from the top liquidity sources, every time. A fee of $1% is automatically factored into this quote.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
@@ -2433,7 +2339,7 @@
     "description": "$1 is the number of quotes that the user can select from when opening the list of quotes on the 'view quote' screen"
   },
   "swapNetworkFeeSummary": {
-    "message": "The network fee covers the cost of processing your swap and storing it on the $1 network. MetaMask does not profit from this fee."
+    "message": "The network fee covers the cost of processing your swap and storing it on the $1 network. MistWallet does not profit from this fee."
   },
   "swapNewQuoteIn": {
     "message": "New quotes in $1",
@@ -2470,7 +2376,7 @@
     "message": "If the price changes between the time your order is placed and confirmed it’s called \"slippage\". Your Swap will automatically cancel if slippage exceeds your \"slippage tolerance\" setting."
   },
   "swapQuoteIncludesRate": {
-    "message": "Quote includes a $1% MetaMask fee",
+    "message": "Quote includes a $1% MistWallet fee",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapQuoteNofN": {
@@ -2619,7 +2525,7 @@
     "message": "View in activity"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "This will switch the selected network within MetaMask to a previously added network:"
+    "message": "This will switch the selected network within MistWallet to a previously added network:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Allow this site to switch the network?"
@@ -2661,16 +2567,16 @@
     "message": "Make sure nobody else is looking at your screen when you scan this code"
   },
   "syncWithMobileComplete": {
-    "message": "Your data has been synced successfully. Enjoy the MetaMask mobile app!"
+    "message": "Your data has been synced successfully. Enjoy the MistWallet mobile app!"
   },
   "syncWithMobileDesc": {
-    "message": "You can sync your accounts and information with your mobile device. Open the MetaMask mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
+    "message": "You can sync your accounts and information with your mobile device. Open the MistWallet mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "If you just open the MetaMask Mobile app for the first time, just follow the steps in your phone."
+    "message": "If you just open the MistWallet Mobile app for the first time, just follow the steps in your phone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scan this code with your MetaMask mobile app"
+    "message": "Scan this code with your MistWallet mobile app"
   },
   "syncWithMobileTitle": {
     "message": "Sync with mobile"
@@ -2752,7 +2658,7 @@
     "message": "Site suggested"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "Edit to use MetaMask's recommended gas fee based on the latest block."
+    "message": "Edit to use MistWallet's recommended gas fee based on the latest block."
   },
   "transactionDetailGasHeading": {
     "message": "Estimated gas fee"
@@ -2764,7 +2670,7 @@
     "message": "Gas fees are set by the network and fluctuate based on network traffic and transaction complexity."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. MetaMask does not profit from gas fees."
+    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. MistWallet does not profit from gas fees."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Amount + gas fee"
@@ -2833,11 +2739,7 @@
     "message": "Turn on Token Detection"
   },
   "typePassword": {
-    "message": "Type your MetaMask password"
-  },
-  "u2f": {
-    "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "message": "Type your MistWallet password"
   },
   "unapproved": {
     "message": "Unapproved"
@@ -2900,7 +2802,7 @@
     "message": "Use Token Detection"
   },
   "useTokenDetectionDescription": {
-    "message": "We use third-party APIs to detect and display new tokens sent to your wallet. Turn off if you don’t want MetaMask to pull data from those services."
+    "message": "We use third-party APIs to detect and display new tokens sent to your wallet. Turn off if you don’t want MistWallet to pull data from those services."
   },
   "usedByClients": {
     "message": "Used by a variety of different clients"
@@ -2953,25 +2855,8 @@
   "walletConnectionGuide": {
     "message": "our hardware wallet connection guide"
   },
-  "walletCreationSuccessDetail": {
-    "message": "You’ve successfully protected your wallet. Keep your Secret Recovery Phrase safe and secret -- it’s your responsibility!"
-  },
-  "walletCreationSuccessReminder1": {
-    "message": "MetaMask can’t recover your Secret Recovery Phrase."
-  },
-  "walletCreationSuccessReminder2": {
-    "message": "MetaMask will never ask you for your Secret Recovery Phrase."
-  },
-  "walletCreationSuccessReminder3": {
-    "message": "$1 with anyone or risk your funds being stolen",
-    "description": "$1 is separated as walletCreationSuccessReminder3BoldSection so that we can bold it"
-  },
-  "walletCreationSuccessReminder3BoldSection": {
-    "message": "Never share your Secret Recovery Phrase",
-    "description": "This string is localized separately from walletCreationSuccessReminder3 so that we can bold it"
-  },
-  "walletCreationSuccessTitle": {
-    "message": "Wallet creation successful"
+  "walletSeed": {
+    "message": "Secret Recovery Phrase"
   },
   "walletSeedRestore": {
     "message": "Wallet Secret Recovery Phrase"
@@ -2980,37 +2865,15 @@
     "message": "We noticed that the current website tried to use the removed window.web3 API. If the site appears to be broken, please click $1 for more information.",
     "description": "$1 is a clickable link."
   },
-  "webhid": {
-    "message": "WebHID",
-    "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
-  },
   "welcome": {
-    "message": "Welcome to MetaMask"
+    "message": "Welcome to MistWallet"
   },
   "welcomeBack": {
     "message": "Welcome Back!"
   },
-  "welcomeExploreDescription": {
-    "message": "Store, send and spend crypto currencies and assets."
-  },
-  "welcomeExploreTitle": {
-    "message": "Explore decentralized apps"
-  },
-  "welcomeLoginDescription": {
-    "message": "Use your MetaMask to login to decentralized apps - no signup needed."
-  },
-  "welcomeLoginTitle": {
-    "message": "Say hello to your wallet"
-  },
-  "welcomeToMetaMask": {
-    "message": "Let's get started"
-  },
-  "welcomeToMetaMaskIntro": {
-    "message": "Trusted by millions, MetaMask is a secure wallet making the world of web3 accessible to all."
-  },
   "whatsNew": {
     "message": "What's new",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to MistWallet."
   },
   "whatsThis": {
     "message": "What's this?"

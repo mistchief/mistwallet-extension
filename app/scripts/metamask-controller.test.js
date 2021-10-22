@@ -9,7 +9,6 @@ import proxyquire from 'proxyquire';
 import { TRANSACTION_STATUSES } from '../../shared/constants/transaction';
 import createTxMeta from '../../test/lib/createTxMeta';
 import { NETWORK_TYPE_RPC } from '../../shared/constants/network';
-import { KEYRING_TYPES } from '../../shared/constants/hardware-wallets';
 import { addHexPrefix } from './lib/util';
 
 const Ganache = require('../../test/e2e/ganache');
@@ -507,11 +506,11 @@ describe('MetaMaskController', function () {
       sinon.spy(metamaskController.keyringController, 'addNewKeyring');
       await metamaskController.connectHardware('trezor', 0).catch(() => null);
       const keyrings = await metamaskController.keyringController.getKeyringsByType(
-        KEYRING_TYPES.TREZOR,
+        'Trezor Hardware',
       );
       assert.deepEqual(
         metamaskController.keyringController.addNewKeyring.getCall(0).args,
-        [KEYRING_TYPES.TREZOR],
+        ['Trezor Hardware'],
       );
       assert.equal(keyrings.length, 1);
     });
@@ -520,11 +519,11 @@ describe('MetaMaskController', function () {
       sinon.spy(metamaskController.keyringController, 'addNewKeyring');
       await metamaskController.connectHardware('ledger', 0).catch(() => null);
       const keyrings = await metamaskController.keyringController.getKeyringsByType(
-        KEYRING_TYPES.LEDGER,
+        'Ledger Hardware',
       );
       assert.deepEqual(
         metamaskController.keyringController.addNewKeyring.getCall(0).args,
-        [KEYRING_TYPES.LEDGER],
+        ['Ledger Hardware'],
       );
       assert.equal(keyrings.length, 1);
     });
@@ -568,7 +567,7 @@ describe('MetaMaskController', function () {
       await metamaskController.connectHardware('trezor', 0).catch(() => null);
       await metamaskController.forgetDevice('trezor');
       const keyrings = await metamaskController.keyringController.getKeyringsByType(
-        KEYRING_TYPES.TREZOR,
+        'Trezor Hardware',
       );
 
       assert.deepEqual(keyrings[0].accounts, []);
@@ -627,7 +626,7 @@ describe('MetaMaskController', function () {
 
     it('should set unlockedAccount in the keyring', async function () {
       const keyrings = await metamaskController.keyringController.getKeyringsByType(
-        KEYRING_TYPES.TREZOR,
+        'Trezor Hardware',
       );
       assert.equal(keyrings[0].unlockedAccount, accountToUnlock);
     });

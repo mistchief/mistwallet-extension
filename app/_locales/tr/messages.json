@@ -19,7 +19,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -184,7 +184,7 @@
     "message": "Hesap Al"
   },
   "importAccountMsg": {
-    "message": " Alınan hesaplar orjinal kaynakifadenizle yarattığınız MetaMask hesabınızla ilişkilendirilmez. Alınan hesaplar ile ilgili daha fazla bilgi edinin "
+    "message": " Alınan hesaplar orjinal kaynakifadenizle yarattığınız MistWallet hesabınızla ilişkilendirilmez. Alınan hesaplar ile ilgili daha fazla bilgi edinin "
   },
   "imported": {
     "message": "Alındı",
@@ -243,7 +243,7 @@
     "message": "Mesaj"
   },
   "metamaskDescription": {
-    "message": "MetaMask Ethereum için güvenli bir kimlik kasasıdır."
+    "message": "MistWallet Ethereum için güvenli bir kimlik kasasıdır."
   },
   "mustSelectOne": {
     "message": "En az bir jeton seçilmeli"
@@ -252,7 +252,7 @@
     "message": "Hesaplarım"
   },
   "needEtherInWallet": {
-    "message": "MetaMask kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Ether bulunmalıdır."
+    "message": "MistWallet kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Ether bulunmalıdır."
   },
   "needImportFile": {
     "message": "Almak için bir dosya seçmelisiniz.",
@@ -454,8 +454,11 @@
   "visitWebSite": {
     "message": "Web sitemizi ziyaret edin"
   },
+  "walletSeed": {
+    "message": "Cüzdan Kaynağı"
+  },
   "welcome": {
-    "message": "MetaMask'ya Hoşgeldiniz"
+    "message": "MistWallet'ya Hoşgeldiniz"
   },
   "youSign": {
     "message": "İmzalıyorsunuz"

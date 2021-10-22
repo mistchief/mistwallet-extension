@@ -239,7 +239,7 @@ export default class ImportWithSeedPhrase extends PureComponent {
         </div>
         <div className="first-time-flow__text-block">{t('secretPhrase')}</div>
         <div className="first-time-flow__textarea-wrapper">
-          <label>{t('secretRecoveryPhrase')}</label>
+          <label>{t('walletSeed')}</label>
           {showSeedPhrase ? (
             <textarea
               className="first-time-flow__textarea"
@@ -258,9 +258,7 @@ export default class ImportWithSeedPhrase extends PureComponent {
               autoComplete="off"
             />
           )}
-          {seedPhraseError ? (
-            <span className="error">{seedPhraseError}</span>
-          ) : null}
+          {seedPhraseError && <span className="error">{seedPhraseError}</span>}
           <div
             className="first-time-flow__checkbox-container"
             onClick={this.toggleShowSeedPhrase}

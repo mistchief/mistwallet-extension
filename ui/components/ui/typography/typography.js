@@ -8,7 +8,7 @@ import {
   TEXT_ALIGN,
   TYPOGRAPHY,
 } from '../../../helpers/constants/design-system';
-import Box, { MultipleSizes } from '../box';
+import Box from '../box';
 
 const { H6, H7, H8, H9 } = TYPOGRAPHY;
 
@@ -22,7 +22,6 @@ export default function Typography({
   fontStyle = 'normal',
   align,
   boxProps = {},
-  margin = [1, 0],
 }) {
   const computedClassName = classnames(
     'typography',
@@ -45,7 +44,7 @@ export default function Typography({
   }
 
   return (
-    <Box margin={margin} {...boxProps}>
+    <Box margin={[1, 0]} {...boxProps}>
       {(boxClassName) => (
         <Tag className={classnames(boxClassName, computedClassName)}>
           {children}
@@ -64,7 +63,6 @@ Typography.propTypes = {
   boxProps: PropTypes.shape({
     ...Box.propTypes,
   }),
-  margin: MultipleSizes,
   fontWeight: PropTypes.oneOf(Object.values(FONT_WEIGHT)),
   fontStyle: PropTypes.oneOf(Object.values(FONT_STYLE)),
   tag: PropTypes.oneOf([

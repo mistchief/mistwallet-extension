@@ -24,8 +24,11 @@ export default function AccountListItem({
           className="account-list-item__identicon"
           diameter={18}
         />
+
         <div className="account-list-item__account-name">{name || address}</div>
-        {icon ? <div className="account-list-item__icon">{icon}</div> : null}
+
+        {icon && <div className="account-list-item__icon">{icon}</div>}
+
         <AccountMismatchWarning address={address} />
       </div>
 

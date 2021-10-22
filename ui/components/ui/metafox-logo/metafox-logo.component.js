@@ -34,7 +34,7 @@ export default class MetaFoxLogo extends PureComponent {
           src={
             useDark
               ? getBuildSpecificAsset('metafoxLogoHorizontalDark')
-              : './images/logo/metamask-logo-horizontal.svg'
+              : './images/logo/alchemist.jpeg'
           }
           className={classnames({
             'app-header__metafox-logo--horizontal': !isOnboarding,
@@ -44,7 +44,7 @@ export default class MetaFoxLogo extends PureComponent {
         />
         <img
           {...iconProps}
-          src="./images/logo/metamask-fox.svg"
+          src="./images/logo/alchemist.jpeg.svg"
           className={classnames({
             'app-header__metafox-logo--icon': !isOnboarding,
             'onboarding-app-header__metafox-logo--icon': isOnboarding,

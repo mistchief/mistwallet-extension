@@ -30,7 +30,7 @@
     "message": "سجل النشاط"
   },
   "addAcquiredTokens": {
-    "message": "أضف العملات الرمزية التي اكتسبتها باستخدام MetaMask"
+    "message": "أضف العملات الرمزية التي اكتسبتها باستخدام MistWallet"
   },
   "addAlias": {
     "message": "إضافة اسم مستعار"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -95,7 +95,7 @@
     "message": "مؤقت تسجيل الخروج التلقائي (بالدقائق)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "اضبط مهلة السكون بالدقائق التي يقوم MetaMask بتسجيل الخروج بعدها تلقائيًا"
+    "message": "اضبط مهلة السكون بالدقائق التي يقوم MistWallet بتسجيل الخروج بعدها تلقائيًا"
   },
   "average": {
     "message": "المتوسط"
@@ -107,7 +107,7 @@
     "message": "العودة إلى الجميع"
   },
   "backupApprovalInfo": {
-    "message": "هذا الرمز السري مطلوب لاسترداد محفظتك في حالة فقد جهازك أو نسيان كلمة مرورك أو إعادة تثبيت MetaMask أو الرغبة في الوصول إلى محفظتك عبر جهاز آخر."
+    "message": "هذا الرمز السري مطلوب لاسترداد محفظتك في حالة فقد جهازك أو نسيان كلمة مرورك أو إعادة تثبيت MistWallet أو الرغبة في الوصول إلى محفظتك عبر جهاز آخر."
   },
   "backupApprovalNotice": {
     "message": "قم بالنسخ الاحتياطي لرمز الاسترداد السري للحفاظ على محفظتك وأموالك بأمان."
@@ -141,7 +141,7 @@
     "message": "قم بشراء عملة إيثير بواسطة Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "يتيح لك Wyre استخدام بطاقة ائتمان لإيداع ETH مباشرة في حساب MetaMask الخاص بك."
+    "message": "يتيح لك Wyre استخدام بطاقة ائتمان لإيداع ETH مباشرة في حساب MistWallet الخاص بك."
   },
   "bytes": {
     "message": "بايتات"
@@ -159,7 +159,7 @@
     "message": "معرّف السلسلة"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "تحتاج إلى استخدام MetaMask على Google Chrome للاتصال بمحفظة الأجهزة الخاصة بك."
+    "message": "تحتاج إلى استخدام MistWallet على Google Chrome للاتصال بمحفظة الأجهزة الخاصة بك."
   },
   "clickToRevealSeed": {
     "message": "انقر هنا للكشف عن الكلمات السرية"
@@ -333,13 +333,13 @@
     "message": "لا تشارك هذه الجملة مطلقًا مع أي شخص."
   },
   "endOfFlowMessage5": {
-    "message": "كن حذراً من الخداع الإلكتروني! لن يسأل MetaMask من تلقاء نفسه عن عبارة الأمان الخاصة بك أبداً."
+    "message": "كن حذراً من الخداع الإلكتروني! لن يسأل MistWallet من تلقاء نفسه عن عبارة الأمان الخاصة بك أبداً."
   },
   "endOfFlowMessage6": {
     "message": "إذا كنت بحاجة إلى عمل نسخة احتياطية من عبارة الأمان الخاصة بك مرة أخرى، يمكنك العثور عليها في الإعدادات -> الأمان."
   },
   "endOfFlowMessage8": {
-    "message": "لا يمكن لـ MetaMask استعادة جملتك البذرية. تعلم المزيد."
+    "message": "لا يمكن لـ MistWallet استعادة جملتك البذرية. تعلم المزيد."
   },
   "endOfFlowMessage9": {
     "message": "اعرف المزيد."
@@ -446,7 +446,7 @@
     "message": "الاتصال بمحفظة hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "حدد محفظة أجهزة ترغب في استخدامها مع MetaMask"
+    "message": "حدد محفظة أجهزة ترغب في استخدامها مع MistWallet"
   },
   "here": {
     "message": "هنا",
@@ -472,7 +472,7 @@
     "message": "استيراد الحساب"
   },
   "importAccountMsg": {
-    "message": "لن يتم ربط الحسابات التي تم استيرادها بعبارة أمان حساب MetaMask الذي تم إنشاؤها في الأصل. تعرف على المزيد حول الحسابات المستوردة"
+    "message": "لن يتم ربط الحسابات التي تم استيرادها بعبارة أمان حساب MistWallet الذي تم إنشاؤها في الأصل. تعرف على المزيد حول الحسابات المستوردة"
   },
   "importAccountSeedPhrase": {
     "message": "استيراد حساب باستخدام عبارة الأمان"
@@ -570,7 +570,7 @@
     "message": "إيصالك بالإيثيريوم وبالشبكة اللامركزية."
   },
   "metamaskVersion": {
-    "message": "إصدار MetaMask "
+    "message": "إصدار MistWallet "
   },
   "mustSelectOne": {
     "message": "يجب تحديد عملة رمزية واحدة على الأقل."
@@ -579,7 +579,7 @@
     "message": "حساباتي"
   },
   "needEtherInWallet": {
-    "message": "للتفاعل مع التطبيقات اللامركزية باستخدام MetaMask، ستحتاج إلى الإيثير في محفظتك."
+    "message": "للتفاعل مع التطبيقات اللامركزية باستخدام MistWallet، ستحتاج إلى الإيثير في محفظتك."
   },
   "needImportFile": {
     "message": "يلزم تحديد ملف للاستيراد.",
@@ -622,8 +622,8 @@
   "newPassword": {
     "message": "كلمة مرور جديدة (8 أحرف كحد أدنى)"
   },
-  "newToMetaMask": {
-    "message": "هل انت جديد في MetaMask؟"
+  "newToMistWallet": {
+    "message": "هل انت جديد في MistWallet؟"
   },
   "newTotal": {
     "message": "إجمالي جديد"
@@ -683,7 +683,7 @@
     "message": "المشاركة في MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "شارك في MetaMetrics لمساعدتنا في جعل MetaMask أفضل"
+    "message": "شارك في MetaMetrics لمساعدتنا في جعل MistWallet أفضل"
   },
   "password": {
     "message": "كلمة المرور"
@@ -792,6 +792,9 @@
   "revealSeedWordsDescription": {
     "message": "إذا كنت تنوي تغيير المتصفحات أو نقل أجهزة الكمبيوتر في أي وقت، فسوف تحتاج إلى عبارة الأمان هذه للوصول إلى حساباتك. احفظها في مكان آمن وسري."
   },
+  "revealSeedWordsTitle": {
+    "message": "عبارة الأمان"
+  },
   "revealSeedWordsWarning": {
     "message": "يمكن استخدام هذه الكلمات لسرقة جميع حساباتك."
   },
@@ -828,6 +831,9 @@
   "searchTokens": {
     "message": "البحث عن العملات الرمزية"
   },
+  "secretBackupPhrase": {
+    "message": "الجملة الاحتياطية السرية"
+  },
   "secretBackupPhraseDescription": {
     "message": "تجعل عبارة النسخ الاحتياطي السرية الخاصة بك من السهل إجراء نسخ احتياطي واستعادة حسابك."
   },
@@ -853,7 +859,7 @@
     "message": "قم بتحديد حساب"
   },
   "selectAnAccountHelp": {
-    "message": "حدد الحساب لعرضه في MetaMask"
+    "message": "حدد الحساب لعرضه في MistWallet"
   },
   "selectEachPhrase": {
     "message": "يُرجى تحديد كل عبارة للتأكد من صحتها."
@@ -967,16 +973,16 @@
     "message": "تأكد من عدم قيام أي شخص آخر بالنظر إلى شاشتك عند مسح هذا الرمز"
   },
   "syncWithMobileComplete": {
-    "message": "تمت مزامنة بياناتك بنجاح. استمتع بتطبيق MetaMask للهاتف المحمول!"
+    "message": "تمت مزامنة بياناتك بنجاح. استمتع بتطبيق MistWallet للهاتف المحمول!"
   },
   "syncWithMobileDesc": {
-    "message": "يمكنك مزامنة حساباتك ومعلوماتك مع جهازك المحمول. افتح تطبيق MetaMask على الجهاز المحمول وانتقل إلى \"الإعدادات\" ثم انقر على \"المزامنة من إضافة المتصفح\""
+    "message": "يمكنك مزامنة حساباتك ومعلوماتك مع جهازك المحمول. افتح تطبيق MistWallet على الجهاز المحمول وانتقل إلى \"الإعدادات\" ثم انقر على \"المزامنة من إضافة المتصفح\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "إذا قمت للتوّ بفتح تطبيق MetaMask للهواتف المحمولة لأول مرة، فاتبع الخطوات الموجودة في هاتفك."
+    "message": "إذا قمت للتوّ بفتح تطبيق MistWallet للهواتف المحمولة لأول مرة، فاتبع الخطوات الموجودة في هاتفك."
   },
   "syncWithMobileScanThisCode": {
-    "message": "امسح هذا الرمز ضوئياً باستخدام تطبيق MetaMask للهواتف المحمولة"
+    "message": "امسح هذا الرمز ضوئياً باستخدام تطبيق MistWallet للهواتف المحمولة"
   },
   "syncWithMobileTitle": {
     "message": "المزامنة مع الجهاز المحمول"
@@ -1067,7 +1073,7 @@
     "message": "إعادة المحاولة"
   },
   "typePassword": {
-    "message": "أدخل كلمة مرور MetaMask الخاصة بك"
+    "message": "أدخل كلمة مرور MistWallet الخاصة بك"
   },
   "unapproved": {
     "message": "تم الرفض"
@@ -1117,8 +1123,11 @@
   "visitWebSite": {
     "message": "قم بزيارة موقعنا على الإنترنت"
   },
+  "walletSeed": {
+    "message": "بذرة المحفظة"
+  },
   "welcome": {
-    "message": "مرحباً بك في MetaMask"
+    "message": "مرحباً بك في MistWallet"
   },
   "welcomeBack": {
     "message": "نرحب بعودتك!"

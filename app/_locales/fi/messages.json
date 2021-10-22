@@ -30,7 +30,7 @@
     "message": "toimintaloki"
   },
   "addAcquiredTokens": {
-    "message": "Lisää MetaMaskia käyttämällä hankkimasi tietueet"
+    "message": "Lisää MistWalletia käyttämällä hankkimasi tietueet"
   },
   "addAlias": {
     "message": "Lisää alias"
@@ -67,7 +67,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "MistWallet",
     "description": "The name of the application"
   },
   "approve": {
@@ -95,7 +95,7 @@
     "message": "Automaattisen uloskirjautumisen ajastin (minuuttia)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Määritä, montako minuuttia MetaMask on ollut joutilaana ennen kuin sinut kirjataan automaattisesti ulos"
+    "message": "Määritä, montako minuuttia MistWallet on ollut joutilaana ennen kuin sinut kirjataan automaattisesti ulos"
   },
   "average": {
     "message": "Keskiverto"
@@ -107,7 +107,7 @@
     "message": "Takaisin kaikkiin"
   },
   "backupApprovalInfo": {
-    "message": "Tämä salainen koodi vaaditaan kukkarosi palauttamiseen siinä tapauksessa, että kadotat laitteesi, unohdat salasanasi, joudut asentamaan MetaMaskin uudestaan tai haluat käyttää lompakkoasi jollakin toisella laitteella."
+    "message": "Tämä salainen koodi vaaditaan kukkarosi palauttamiseen siinä tapauksessa, että kadotat laitteesi, unohdat salasanasi, joudut asentamaan MistWalletin uudestaan tai haluat käyttää lompakkoasi jollakin toisella laitteella."
   },
   "backupApprovalNotice": {
     "message": "Varmuuskopioi salainen palautuskoodisi pitääksesi kukkarosi ja varasi turvassa."
@@ -141,7 +141,7 @@
     "message": "Osta ETH:ta Wyrella"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre antaa sinun käyttää luottokorttia, jotta voit tallettaa ETH:ta suoraan MetaMask-tilillesi."
+    "message": "Wyre antaa sinun käyttää luottokorttia, jotta voit tallettaa ETH:ta suoraan MistWallet-tilillesi."
   },
   "bytes": {
     "message": "Tavua"
@@ -159,7 +159,7 @@
     "message": "Ketjun tunnus"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Sinun tarvitsee käyttää MetaMaskia Google Chromessa voidaksesi yhdistää laitteistokukkaroosi."
+    "message": "Sinun tarvitsee käyttää MistWalletia Google Chromessa voidaksesi yhdistää laitteistokukkaroosi."
   },
   "clickToRevealSeed": {
     "message": "Paljasta salaiset sanat napsauttamalla tästä"
@@ -333,13 +333,13 @@
     "message": "Älä koskaan luovuta lausetta kenellekään."
   },
   "endOfFlowMessage5": {
-    "message": "Varo tietojenkalastelua! MetaMask ei koskaan pyydä spontaanisti siemenlausettasi."
+    "message": "Varo tietojenkalastelua! MistWallet ei koskaan pyydä spontaanisti siemenlausettasi."
   },
   "endOfFlowMessage6": {
     "message": "Jos tarvitse uuden varmuuskopion juurilauseestasi, niin se löytyy osiosta Asetukset -> Turvallisuus."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask ei pysty palauttamaan salaustekstiäsi. Lue lisää."
+    "message": "MistWallet ei pysty palauttamaan salaustekstiäsi. Lue lisää."
   },
   "endOfFlowMessage9": {
     "message": "Lue lisää."
@@ -450,7 +450,7 @@
     "message": "Yhdistä kiinteän laitteiston lompakko"
   },
   "hardwareWalletsMsg": {
-    "message": "Valitse laitteistokukkaro, jota haluaisit käyttää MetaMaskilla"
+    "message": "Valitse laitteistokukkaro, jota haluaisit käyttää MistWalletilla"
   },
   "here": {
     "message": "tässä",
@@ -476,7 +476,7 @@
     "message": "Tuo tili"
   },
   "importAccountMsg": {
-    "message": "Tuotuja tilejä ei liitetä alkuperäisen MetaMask-tilisi siemenlauseeseen. Lue lisää tuoduista tileistä"
+    "message": "Tuotuja tilejä ei liitetä alkuperäisen MistWallet-tilisi siemenlauseeseen. Lue lisää tuoduista tileistä"
   },
   "importAccountSeedPhrase": {
     "message": "Tuo tili siemenlauseella"
@@ -577,7 +577,7 @@
     "message": "Sinua yhdistetään Ethereumiin ja hajautettuun verkkoon."
   },
   "metamaskVersion": {
-    "message": "MetaMask-versio"
+    "message": "MistWallet-versio"
   },
   "mustSelectOne": {
     "message": "Valittava vähintään 1 poletti."
@@ -629,8 +629,8 @@
   "newPassword": {
     "message": "Uusi salasana (väh. 8 merkkiä)"
   },
-  "newToMetaMask": {
-    "message": "Onko MetaMask ennestään outo?"
+  "newToMistWallet": {
+    "message": "Onko MistWallet ennestään outo?"
   },
   "newTotal": {
     "message": "Uusi kokonaissumma"
@@ -687,7 +687,7 @@
     "message": "Osallistu MetaMetricsiin"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Osallistu MetaMetricsiin auttaaksesi meitä tekemään MetaMaskista paremman"
+    "message": "Osallistu MetaMetricsiin auttaaksesi meitä tekemään MistWalletista paremman"
   },
   "password": {
     "message": "Salasana"
@@ -796,6 +796,9 @@
   "revealSeedWordsDescription": {
     "message": "Mikäli vaihdat jossakin vaiheessa selainta tai tietokonetta, tarvitset tämän salaustekstin tiliesi käyttämiseen. Tallenna se johonkin turvalliseen ja salaiseen paikkaan."
   },
+  "revealSeedWordsTitle": {
+    "message": "Juurilause"
+  },
   "revealSeedWordsWarning": {
     "message": "Näitä sanoja voidaan käyttää kaikkien tiliesi ryöstämiseen."
   },
@@ -832,6 +835,9 @@
   "searchTokens": {
     "message": "Hae tietueita"
   },
+  "secretBackupPhrase": {
+    "message": "Salainen varmuuskopiolause"
+  },
   "secretBackupPhraseDescription": {
     "message": "Salainen varmistuslauseesi tekee varmuuskopioinnista ja tilisi palauttamisesta helppoa."
   },
@@ -857,7 +863,7 @@
     "message": "Valitse tili"
   },
   "selectAnAccountHelp": {
-    "message": "Valitse MetaMaskissa näytettävä tili"
+    "message": "Valitse MistWalletissa näytettävä tili"
   },
   "selectEachPhrase": {
     "message": "Ole hyvä ja valitse jokainen teksti järjestyksessä varmistaaksesi, että se on oikein."
@@ -971,16 +977,16 @@
     "message": "Varmista, ettei kukaan muu katsele näyttöäsi, kun skannaat koodin"
   },
   "syncWithMobileComplete": {
-    "message": "Tietojesi synkronoiminen onnistui. Nauti MetaMask-mobiilisovelluksesta!"
+    "message": "Tietojesi synkronoiminen onnistui. Nauti MistWallet-mobiilisovelluksesta!"
   },
   "syncWithMobileDesc": {
-    "message": "Voit synkronoida tilisi ja tietosi mobiililaitteidesi kesken. Avaa MetaMaskin mobiilisovellus, siirry \"Asetukset\"-osioon ja napauta \"Synkronoi selainlaajennuksesta\" -vaihtoehtoa"
+    "message": "Voit synkronoida tilisi ja tietosi mobiililaitteidesi kesken. Avaa MistWalletin mobiilisovellus, siirry \"Asetukset\"-osioon ja napauta \"Synkronoi selainlaajennuksesta\" -vaihtoehtoa"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Jos avaat MetaMaskin mobiilisovelluksen vasta ensimmäistä kertaa, noudata vain puhelimesi ilmoittamia vaiheita."
+    "message": "Jos avaat MistWalletin mobiilisovelluksen vasta ensimmäistä kertaa, noudata vain puhelimesi ilmoittamia vaiheita."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Lue tämä koodi MetaMask-mobiilisovelluksellasi"
+    "message": "Lue tämä koodi MistWallet-mobiilisovelluksellasi"
   },
   "syncWithMobileTitle": {
     "message": "Synkronoi mobiililaitteen kanssa"
@@ -1071,7 +1077,7 @@
     "message": "Yritä uudelleen"
   },
   "typePassword": {
-    "message": "Kirjoita MetaMask-salasanasi"
+    "message": "Kirjoita MistWallet-salasanasi"
   },
   "unapproved": {
     "message": "Ei hyväksytty"
@@ -1121,8 +1127,11 @@
   "visitWebSite": {
     "message": "Vieraile verkkosivustollamme"
   },
+  "walletSeed": {
+    "message": "Lompakon siemen"
+  },
   "welcome": {
-    "message": "Tervetuloa MetaMaskiin"
+    "message": "Tervetuloa MistWalletiin"
   },
   "welcomeBack": {
     "message": "Tervetuloa takaisin!"

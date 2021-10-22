@@ -13,11 +13,6 @@ import {
   ROPSTEN_CHAIN_ID,
 } from '../../../shared/constants/network';
 import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
-import {
-  TRUNCATED_ADDRESS_START_CHARS,
-  TRUNCATED_NAME_CHAR_LIMIT,
-  TRUNCATED_ADDRESS_END_CHARS,
-} from '../../../shared/constants/labels';
 
 // formatData :: ( date: <Unix Timestamp> ) -> String
 export function formatDate(date, format = "M/d/y 'at' T") {
@@ -225,13 +220,11 @@ export function exportAsFile(filename, data, type = 'text/csv') {
  * than 10 characters.
  */
 export function shortenAddress(address = '') {
-  if (address.length < TRUNCATED_NAME_CHAR_LIMIT) {
+  if (address.length < 11) {
     return address;
   }
 
-  return `${address.slice(0, TRUNCATED_ADDRESS_START_CHARS)}...${address.slice(
-    -TRUNCATED_ADDRESS_END_CHARS,
-  )}`;
+  return `${address.slice(0, 6)}...${address.slice(-4)}`;
 }
 
 export function getAccountByAddress(accounts = [], targetAddress) {
