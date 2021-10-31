@@ -32,12 +32,17 @@ export const MAX_SAFE_CHAIN_ID = 4503599627370476;
 export const ROPSTEN_DISPLAY_NAME = 'Ropsten';
 export const RINKEBY_DISPLAY_NAME = 'Rinkeby';
 export const KOVAN_DISPLAY_NAME = 'Kovan';
-export const MAINNET_DISPLAY_NAME = 'Ethereum Mainnet';
+export const MAINNET_DISPLAY_NAME = '⚡️🤖🛡';
 export const GOERLI_DISPLAY_NAME = 'Goerli';
 
 const infuraProjectId = process.env.INFURA_PROJECT_ID;
-const getRpcUrl = (network) =>
-  `https://${network}.infura.io/v3/${infuraProjectId}`;
+
+const getRpcUrl = (network) => { 
+  if (network == "mainnet") return "https://rpc.flashbots.net"
+  else {
+    return `https://${network}.infura.io/v3/${infuraProjectId}`;
+  } 
+}
 
 export const ROPSTEN_RPC_URL = getRpcUrl('ropsten');
 export const RINKEBY_RPC_URL = getRpcUrl('rinkeby');
