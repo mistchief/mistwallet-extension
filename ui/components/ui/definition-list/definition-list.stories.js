@@ -23,7 +23,7 @@ const basic = {
 };
 
 const advanced = {
-  'Network Name': 'Ethereum Mainnet',
+  'Network Name': '⚡️🤖🛡',
   'Chain ID': '1',
   'Ticker': 'ETH',
 };

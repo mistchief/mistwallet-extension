@@ -179,7 +179,7 @@ describe('NetworkController', function () {
         },
         {
           input: 'mainnet',
-          expected: 'Ethereum Mainnet',
+          expected: '⚡️🤖🛡',
         },
         {
           input: 'goerli',

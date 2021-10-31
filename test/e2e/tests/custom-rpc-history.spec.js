@@ -142,7 +142,7 @@ describe('Stores custom RPC history', function () {
 
         await driver.clickElement('.network-display');
 
-        await driver.clickElement({ text: 'Ethereum Mainnet', tag: 'span' });
+        await driver.clickElement({ text: '⚡️🤖🛡', tag: 'span' });
       },
     );
   });
@@ -168,7 +168,7 @@ describe('Stores custom RPC history', function () {
         });
 
         // click Mainnet to dismiss network dropdown
-        await driver.clickElement({ text: 'Ethereum Mainnet', tag: 'span' });
+        await driver.clickElement({ text: '⚡️🤖🛡', tag: 'span' });
 
         assert.equal(customRpcs.length, 2);
       },

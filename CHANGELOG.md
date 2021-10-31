@@ -405,7 +405,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix multiple notification window prompts. ([#10423](https://github.com/MetaMask/metamask-extension/pull/10423))
 - Fix icons on token options menu. ([#10424](https://github.com/MetaMask/metamask-extension/pull/10424))
 - Fix token fiat conversion rates when switching from certain custom networks. ([#10414](https://github.com/MetaMask/metamask-extension/pull/10414))
-- Disable BUY button from home screen when not on Ethereum Mainnet. ([#10453](https://github.com/MetaMask/metamask-extension/pull/10453))
+- Disable BUY button from home screen when not on ⚡️🤖🛡. ([#10453](https://github.com/MetaMask/metamask-extension/pull/10453))
 - Fixes gas selection check mark on the notification view. ([#10465](https://github.com/MetaMask/metamask-extension/pull/10465))
 - Fix confirm page header with from/to addresses in fullscreen for tx confirmations. ([#10467](https://github.com/MetaMask/metamask-extension/pull/10467))
 - Hide links to etherscan when no block explorer is specified for a custom network for notifications. ([#10455](https://github.com/MetaMask/metamask-extension/pull/10455))
