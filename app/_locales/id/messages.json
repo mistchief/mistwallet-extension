@@ -385,7 +385,7 @@
     "message": "Menghubungkan ke Jaringan Uji Kovan"
   },
   "connectingToMainnet": {
-    "message": "Menghubungkan ke Ethereum Mainnet"
+    "message": "Menghubungkan ke ⚡️🤖🛡"
   },
   "connectingToRinkeby": {
     "message": "Menghubungkan ke Jaringan Uji Rinkeby"
@@ -642,7 +642,7 @@
     "description": "$1 is the return value of eth_chainId from an RPC endpoint"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nama ENS tidak ditemukan pada jaringan saat ini. Coba untuk beralih ke Ethereum Mainnet."
+    "message": "Nama ENS tidak ditemukan pada jaringan saat ini. Coba untuk beralih ke ⚡️🤖🛡."
   },
   "ensRegistrationError": {
     "message": "Kesalahan pada pendaftaran nama ENS"
@@ -1047,7 +1047,7 @@
     "message": "Lock time terlalu besar"
   },
   "mainnet": {
-    "message": "Ethereum Mainnet"
+    "message": "⚡️🤖🛡"
   },
   "makeAnotherSwap": {
     "message": "Buat penukaran baru"

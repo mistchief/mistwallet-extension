@@ -189,7 +189,7 @@
     "message": " Verbinde zum Kovan Testnetzwerk"
   },
   "connectingToMainnet": {
-    "message": "Verbinde zum Ethereum Mainnet"
+    "message": "Verbinde zum ⚡️🤖🛡"
   },
   "connectingToRinkeby": {
     "message": " Verbinde zum Rinkeby Testnetzwerk"
@@ -333,7 +333,7 @@
     "message": "Mehr hierzu."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-Name wurde im aktuellen Netzwerk nicht gefunden. Versuchen Sie, zum Ethereum Mainnet zu wechseln."
+    "message": "ENS-Name wurde im aktuellen Netzwerk nicht gefunden. Versuchen Sie, zum ⚡️🤖🛡 zu wechseln."
   },
   "ensRegistrationError": {
     "message": "Fehler bei der ENS-Namensregistrierung"
@@ -541,7 +541,7 @@
     "message": "Ausloggen"
   },
   "mainnet": {
-    "message": "Ethereum Mainnet"
+    "message": "⚡️🤖🛡"
   },
   "memo": {
     "message": " Memo"

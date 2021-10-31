@@ -447,7 +447,7 @@
     "message": "Connecting to Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Connecting to Ethereum Mainnet"
+    "message": "Connecting to ⚡️🤖🛡"
   },
   "connectingToRinkeby": {
     "message": "Connecting to Rinkeby Test Network"
@@ -587,7 +587,7 @@
     "message": "Decrypt request"
   },
   "defaultNetwork": {
-    "message": "The default network for Ether transactions is Mainnet."
+    "message": "The default network for Ether transactions is Ethereum Mainnet through Flashbots RPC."
   },
   "delete": {
     "message": "Delete"
@@ -813,7 +813,7 @@
     "message": "Illegal Character for ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS name not found on the current network. Try switching to Ethereum Mainnet."
+    "message": "ENS name not found on the current network. Try switching to ⚡️🤖🛡."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Network does not support ENS"
@@ -1296,7 +1296,7 @@
     "message": "Lock time is too great"
   },
   "mainnet": {
-    "message": "Ethereum Mainnet"
+    "message": "⚡️🤖🛡"
   },
   "makeAnotherSwap": {
     "message": "Create a new swap"
@@ -1597,7 +1597,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "To complete transactions on Ethereum Mainnet, make sure your Ledger device has the latest firmware.",
+    "message": "To complete transactions on ⚡️🤖🛡, make sure your Ledger device has the latest firmware.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -2628,7 +2628,7 @@
     "message": "Token decimal required."
   },
   "tokenDetectionAnnouncement": {
-    "message": "New! Improved token detection is available on Ethereum Mainnet as an experimental feature. $1"
+    "message": "New! Improved token detection is available on ⚡️🤖🛡 as an experimental feature. $1"
   },
   "tokenSymbol": {
     "message": "Token Symbol"

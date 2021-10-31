@@ -385,7 +385,7 @@
     "message": "Kumokonekta sa Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Kumokonekta sa Ethereum Mainnet"
+    "message": "Kumokonekta sa ⚡️🤖🛡"
   },
   "connectingToRinkeby": {
     "message": "Kumokonekta sa Rinkeby Test Network"
@@ -642,7 +642,7 @@
     "description": "$1 is the return value of eth_chainId from an RPC endpoint"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Hindi nahanap ang ENS name sa kasalukuyang network. Subukang lumipat sa Ethereum Mainnet."
+    "message": "Hindi nahanap ang ENS name sa kasalukuyang network. Subukang lumipat sa ⚡️🤖🛡."
   },
   "ensRegistrationError": {
     "message": "Nagka-error sa pag-register ng ENS name"
@@ -1047,7 +1047,7 @@
     "message": "Masyadong matagal ang oras ng pag-lock"
   },
   "mainnet": {
-    "message": "Ethereum Mainnet"
+    "message": "⚡️🤖🛡"
   },
   "makeAnotherSwap": {
     "message": "Gumawa ng bagong swap"
