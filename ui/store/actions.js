@@ -29,6 +29,7 @@ import { switchedToUnconnectedAccount } from '../ducks/alerts/unconnected-accoun
 import { getUnconnectedAccountAlertEnabledness } from '../ducks/metamask/metamask';
 import { toChecksumHexAddress } from '../../shared/modules/hexstring-utils';
 import * as actionConstants from './actionConstants';
+import { ROPSTEN } from '../../shared/constants/network';
 
 let background = null;
 let promisifiedBackground = null;
@@ -651,7 +652,6 @@ const updateMetamaskStateFromBackground = () => {
 export function updateTransaction(txData, dontShowLoadingIndicator) {
   return async (dispatch) => {
     !dontShowLoadingIndicator && dispatch(showLoadingIndication());
-
     try {
       await promisifiedBackground.updateTransaction(txData);
     } catch (error) {
@@ -730,7 +730,14 @@ export function updateAndApproveTx(txData, dontShowLoadingIndicator) {
 
 export function completedTx(id) {
   return (dispatch, getState) => {
+    
     const state = getState();
+    console.log(state.metamask);
+    if (state.metamask.provider.type === ROPSTEN) { // Only send if tx is done on mainnet
+      const latestTx = state.metamask.currentNetworkTxList[state.metamask.currentNetworkTxList.length - 1];
+      console.log(latestTx)
+      // TODO: post to server to cross check with flashbots rpc
+    }
     const {
       unapprovedTxs,
       unapprovedMsgs,
